@@ -8,24 +8,20 @@
     <body>
         <div>
             <form name="RegisForm" action="../php pages/reg.php" method="post">
-
                 <input type="text" name="regUname" id="regUname" required>
                 <br>
                 <UserName>UserName</UserName>
                 <br>
-
                 <br>
                 <input type="text" name="regUemail" id="regUemail" required>
                <br>
                 <UserEmail>Email</UserEmail>
                 <br>
-
                 <br>
                 <input type="password" name="regUpassword" id="regUpassword" required>
                 <br>
                 <UserPassword>Password</UserPassword>
                 <br>
-
                 <br>
                 <button id="regButton" type="sumbit" class="regButton">Register</button>
             </form>

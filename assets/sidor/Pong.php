@@ -10,12 +10,18 @@
             <h1>Pong</h1>
             <h3><i>Text om pong</i></h3>
         </div>
+
+        <!-- Detta är kod till api-->
 <div id="map">
 </div>
 <script type="text/javascript">
 
 function initMap(){
   var location = {lat: -59.858562,lng: 17.638927};
+  var map = new google.maps.Map(document.getElementById("map"),{
+    zoom: 4,
+    center: location
+  });
 }
 </script>
 

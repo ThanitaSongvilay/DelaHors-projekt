@@ -46,7 +46,7 @@
             var email  		    =document.regForm.regUemail.value;
             var pword         =document.regForm.regUpassword.value;
 
-            if((uname =="" )|| (email=="") || (pword == "")){
+            if((uname.trim() =="" )|| (email.trim() =="") || (pword == "")){
 
               alert("Var vänlig och fyll i ett användarnamn, en epost adress och ett lösenord");
               return false;
@@ -60,7 +60,7 @@
 
             else {
              return false;
-             header("Refresh: 2; URL=../Pages/Register.php");
+             header("Refresh: 0; URL=../Pages/Register.php");
            }
 
           }
@@ -83,7 +83,7 @@
               return true;
             }
             else{
-             alert("Lösenordet måste bestå av 6-20 bokstäver, en storbokstav och minst ett tal");
+             alert("Lösenordet måste bestå av 6-20 bokstäver, en storbokstav och minst en siffra");
              return false;
             }
           }

@@ -10,7 +10,16 @@
             <h1>Pong</h1>
             <h3><i>Text om pong</i></h3>
         </div>
+<div id="map">
+</div>
+<script type="text/javascript">
 
+function initMap(){
+  var location = {lat: -59.858562,lng: 17.638927};
+}
+</script>
+
+</script>
         <div>
             <h3><i>Bild på pong</i></h3>
             <h3><i>Sen kan vi lägga in APIn här så att kartan visas</i></h3>

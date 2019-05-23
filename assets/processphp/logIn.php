@@ -50,7 +50,7 @@ else if(mysqli_num_rows($res_test)>0){
 	}
 	else{
 		echo "Ditt lösenord eller användarnamn är fel, vänligen prova igen" ;
-		header("Refresh:2; URL=../../index.php");
+		header("Refresh:2; URL=../../index.html");
 	}
 
 }

@@ -113,7 +113,7 @@ nav{
   background-color: #77a8a8;
 }
 
-#form{
+/*#form{
   display: grid;
   grid-template-areas: "a a a";
   grid-auto-columns: 3fr;
@@ -127,9 +127,9 @@ nav{
 #Losen{
 grid-gap: 5px 5px;
 }
-
+*/
 /*CSS FOR THE GRID*/
-.grid-container{
+/*.grid-container{
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 0px;
@@ -159,4 +159,4 @@ color:#77a8a8;
 
 k{
   object-position: 100% 100%
-}
+}*/

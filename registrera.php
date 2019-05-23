@@ -46,7 +46,7 @@
             var email  		    =document.regForm.regUemail.value;
             var pword         =document.regForm.regUpassword.value;
 
-            if((uname =="" )|| (email=="") || (pword == "")){
+            if((uname.trim() =="" )|| (email.trim() =="") || (pword == "")){
 
               alert("Var vänlig och fyll i ett användarnamn, en epost adress och ett lösenord");
               return false;

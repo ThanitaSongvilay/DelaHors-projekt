@@ -5,7 +5,7 @@
   <title> Hem | Restaurank </title> <!--det här syns i webbläsartabben-->
    <link rel="stylesheet" href="assets/css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-  <scrpit type="text/javascript" src="/assets/js/form.js"></script> <!-- koppla till js-->
+  <scrpit type="text/javascript" src="assets/js/index.js"></script> <!-- koppla till js-->
 </head>
 <body>
   <nav>
@@ -22,7 +22,7 @@
                 </li>
                   </ul>
                   <div id= "logInContainer">
-                    <form id="form" name="form" method="POST" action=""onsubmit= "">
+                    <form id="form" name="form" method="POST" action="#"onsubmit= "return kolla()">
                       <div id="Namn">
                         <input type="text" placeholder="Användarnamn" name="Namn"/>
                       </div>
@@ -32,7 +32,7 @@
                       <div id="Knapp">
                         <button type="submit">Logga in</button>
                      <a href="assets/Pages/Register.php"><button>Skapa konto</button></a>
-                     <p> Jag vill skapa ett konto!  <a href="assets/Pages/Register.php"> Registrera dig hät</a></p>
+                     <p> Jag vill skapa ett konto!  <a href="assets/Pages/Register.php"> Registrera dig här</a></p>
                       </div>
                     </form>
                   </div>

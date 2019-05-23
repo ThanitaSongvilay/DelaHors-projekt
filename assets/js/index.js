@@ -1,7 +1,7 @@
 function kolla()
 {
-      var namn = document.getElementById("Namn").value;
-      var pass = document.getElementById("password").value;
+      var namn = document.form.Namn.value;
+      var pass = document.form.Losen.value;
 
       if(namn.trim() == "")
     {

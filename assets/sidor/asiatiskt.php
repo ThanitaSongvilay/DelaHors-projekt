@@ -8,7 +8,7 @@
     <body>
         <div>
             <h1>Asiatiska restauranger</h1>
-            <h3>Här kan du hitta ett urval bland asiatiska restauranger</h3>
+            <h3><i>Här kan du hitta ett urval bland asiatiska restauranger</i></h3>
         </div>
 
         <div class="grid-container">

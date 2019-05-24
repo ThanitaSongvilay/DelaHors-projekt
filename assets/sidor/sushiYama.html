@@ -55,6 +55,13 @@
           <img src="../img/sushi.jpg">
         </div>
 
+        <br>
+
+        <div>
+          <h4><i>Hitta hit!</i></h4>
+        </div>
+
+        <!--Kartan-->
         <div id="map"></div>
         <script>
           function initMap()
@@ -76,5 +83,28 @@
         </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrRyzQ557WJLJOFj6qpceKnANh4Szwcjw&callback=initMap"
     async defer></script>
+
+    <div>
+      <h3><i>Vi får fixa så att kommentarerna syns här typ</i></h3>
+    </div>
+
+    <!--Form så att användare ska kunna kommentera-->
+    <h2><b>Lämna gärna en kommentar här om vad du tycker om Il Forno Italiano!</b><h2>
+        <form>
+            <br>
+            <input type="text" name="användarNamn" id="användarNamn">
+            <br>
+            <p>Namn:</p>
+            <br>
+
+            <input type="text" name="kommentar" id="kommentar">
+            <br>
+            <p>Kommentar</p>
+            <br>
+
+            <button id="skicka" type="submit" class="skicka">Skicka in</button>
+            <br>
+        </form>
+        
   </body>
 </html>

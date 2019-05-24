@@ -13,27 +13,6 @@
 
         <br>
 
-        <!--Kartan-->
-        <div id="map"></div>
-        <script>
-            function initMap(){
-                var options = {
-                    zoom : 15,
-                    center : {lat: 59.85882 , lng: 17.63889 }
-                }
-
-                var map = new google.maps.Map(document.getElementById('map'), options);
-
-                var marker = new google.maps.Marker({
-                    position: {lat: 59.8578, lng: 17.6281},
-                    map: map
-                });
-            }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrRyzQ557WJLJOFj6qpceKnANh4Szwcjw&callback=initMap"
-        async defer>
-        </script>
-
         <!--En kort beskrivande text-->
         <div>
             <h4><i>På Il Forno Italiano kan du hitta italienska rätter som bland annat vedugnsgräddade pizzor, färsk pasta och antipasti. Utöver detta har restaurangen även ett sortiment av vin.</i></h4>
@@ -43,6 +22,27 @@
         <div id="img">
             <img src="../img/ilforno.jpg">
         </div>
+
+                <!--Kartan-->
+                <div id="map"></div>
+                <script>
+                    function initMap(){
+                        var options = {
+                            zoom : 15,
+                            center : {lat: 59.85882 , lng: 17.63889 }
+                        }
+        
+                        var map = new google.maps.Map(document.getElementById('map'), options);
+        
+                        var marker = new google.maps.Marker({
+                            position: {lat: 59.8578, lng: 17.6281},
+                            map: map
+                        });
+                    }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrRyzQ557WJLJOFj6qpceKnANh4Szwcjw&callback=initMap"
+                async defer>
+                </script>
 
         <!--Här ska kommentarer ligga, vi måste fixa js och php för det-->
         <div>

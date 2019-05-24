@@ -17,10 +17,6 @@ nav p{
   float: left;
   padding: 0px 20px;
 }
-footer{
-  display: block;
-  background-color: grey;
-}
 
 input{
   width: 50%;
@@ -39,7 +35,7 @@ input[type=text]{
   width: 150px
 }
 
-input[type=password]{
+/*input[type=password]{
 
   padding: 10px 15px;
   border: 1px solid #ccc;
@@ -49,7 +45,7 @@ input[type=password]{
   margin-top: 20px;
   font-size: 12px;
   width: 150px
-}
+}*/
 
 .logInContainer{
   float: right;
@@ -113,7 +109,7 @@ nav{
   background-color: #77a8a8;
 }
 
-/*#form{
+#form{
   display: grid;
   grid-template-areas: "a a a";
   grid-auto-columns: 3fr;
@@ -127,7 +123,7 @@ nav{
 #Losen{
 grid-gap: 5px 5px;
 }
-*/
+
 /*CSS FOR THE GRID*/
 /*.grid-container{
   display: grid;

@@ -7,7 +7,6 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
         <script type="text/javascript" src="../js/index.js"></script> <!-- koppla till js-->
         <meta charset="UTF-8">
-        <meta charset="UTF-8">
     </head>
     <body>
       <nav>

@@ -7,7 +7,7 @@ body{
 .dropDown{
   line-height: 50px;
 }
-nav h4{
+nav h5{
   color: grey;
   font-family:'Open Sans', monospace;
 }
@@ -43,6 +43,17 @@ input[type=text]{
   margin-top: 0px;
   font-size: 12px;
   width: 150px
+}
+
+button{
+  background-color: grey; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
 }
 
 /*input[type=password]{

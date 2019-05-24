@@ -1,11 +1,15 @@
 body{
   height: 100%;
-  background-color:white;
+  background-color:#FFF5EE;
   text-align: center;
 }
 
 .dropDown{
-  line-height: 60px;
+  line-height: 3px;
+}
+nav h4{
+  color: grey;
+  font-family:'Open Sans', monospace;
 }
 
 nav p{
@@ -18,19 +22,24 @@ nav p{
   padding: 0px 20px;
 }
 
-input{
+/*input{
   width: 50%;
   align: center;
-}
+}*/
 
 input[type=text]{
 
-  padding: 10px 15px;
+ color: #004D40;
+ background-color: white;
+ border-bottom: solid 2px #4DB6AC;
+ outline: none;
+ z-index: 20;
+ padding: 10px 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
   border-style: hidden;
   box-sizing: none;
-  margin-top: 20px;
+  margin-top: 0px;
   font-size: 12px;
   width: 150px
 }
@@ -63,8 +72,8 @@ button:hover{
 
 nav ul li a{
   display: block;
-  color: white;
-  text-align: center;
+  color: grey;
+  text-align: left;
   font-family:'Open Sans', monospace;
   font-size: 14px;
   padding: 22px 14px;

@@ -23,10 +23,20 @@
           </ul>
         </div>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div id= "logInContainer">
+          <form id="form" name="form" method="POST" action="assets/processphp/logIn.php"onsubmit= "return (kolla())">
+            <div>
+              <input type="text" placeholder="Användarnamn" name="Namn" id="Namn"/>
+            </div>
+            <div>
+              <input type="text" placeholder="Lösenord..." name="password" id="Losen"/>
+            </div>
+            <div id="Knapp">
+              <button type="submit">Logga in</button>
+              <!--<a href="registrera.php" type="button"><button>Skapa konto</button></a>-->
+              <h4> Jag vill skapa ett konto!  <a href="registrera.html"> Registrera dig här</a></h4>
+          </form>
+        </div>
         <div>
             <h1>Asiatiska restauranger</h1>
             <h3><i>Här kan du hitta ett urval bland asiatiska restauranger</i></h3>

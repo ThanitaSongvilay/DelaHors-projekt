@@ -16,6 +16,11 @@
                 }
 
                 var map = new google.maps.Map(document.getElementById('map'), options);
+
+                var marker = new google.maps.Marker({
+                    position: {lat: 59.8578, lng: 17.6281},
+                    map: map
+                });
             }
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrRyzQ557WJLJOFj6qpceKnANh4Szwcjw&callback=initMap"

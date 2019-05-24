@@ -1,89 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Register</title>
-        <h1>Register</h1>
-        <br>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <script type="text/javascript" src="assets/js/index.js"></script> <!-- koppla till js-->
     </head>
     <body>
-        <div>
-            <form name="RegisForm" action="../php pages/reg.php" method="post">
-                <input type="text" name="regUname" id="regUname" required>
-                <br>
-                <UserName>UserName</UserName>
-                <br>
-                <br>
-                <input type="text" name="regUemail" id="regUemail" required>
-               <br>
-                <UserEmail>Email</UserEmail>
-                <br>
-                <br>
-                <input type="password" name="regUpassword" id="regUpassword" required>
-                <br>
-                <UserPassword>Password</UserPassword>
-                <br>
-                <br>
-                <button id="regButton" type="sumbit" class="regButton">Register</button>
-            </form>
+      <nav>
+        <p>RestauRank - Registrering</p>
+        <div class="dropDown">
+          <ul>
+          <li><a href="index.html">Hem</a>
+          </ul>
+          <ul>
+          <li><a href="#">Restauranger</a>
+          <ul>
+          <li><a href="assets/sidor/italienskt.php">Italienskt</a>
+          <li><a href="assets/sidor/asiatiskt.php">Asiatiskt</a>
+          </ul>
         </div>
-
-        <div>
-            <hr>
-            <h4>Have an account?</h4>
-            <a href="Login.php">Log in here!</a>
+      </nav>
+      <div>
+        <form name="RegisForm" action="assets/processphp/reg.php" method="post" onsubmit="return validateForm()">
+            <UserName>Användarnamn:</UserName>
+            <br>
+            <input type="text" name="regUname" id="regUname" required>
+            <br>
+            <br>
+            <UserEmail>Email:</UserEmail>
+            <br>
+            <input type="text" name="regUemail" id="regUemail" required>
+            <br>
+            <br>
+            <UserPassword>Password:</UserPassword>
+            <br>
+            <input type="password" name="regUpassword" id="regUpassword" required>
+            <br>
+            <br>
+            <button id="regButton" type="sumbit" class="regButton">Register</button>
+        </form>
         </div>
-
-        <script type= "text/JavaScript">
-        	var regBtn       = document.getElementById('regButton');
-        	regBtn.addEventListener("click", validateForm);
-          function validateForm()
-          {
-            var uname         =document.regForm.regUname.value;
-            var email  		    =document.regForm.regUemail.value;
-            var pword         =document.regForm.regUpassword.value;
-
-            if((uname.trim() =="" )|| (email.trim() =="") || (pword == "")){
-
-              alert("Var vänlig och fyll i ett användarnamn, en epost adress och ett lösenord");
-              return false;
-            }
-
-            else if((validateEmail(email)==true && validatePword(pword)==true)){
-                document.RegisForm.submit();
-                return true;
-
-            }
-
-            else {
-             return false;
-             header("Refresh: 0; URL=../Pages/Register.php");
-           }
-
-          }
-
-          function validateEmail(email){
-        		if(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
-        		{
-        			return true;
-        		}
-
-        		else {
-        		  alert("Ogiltig epost");
-        		 return false;
-        		}
-        	}
-
-          function validatePword(pword){
-            var psword =/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
-            if(psword.test(pword)){
-              return true;
-            }
-            else{
-             alert("Lösenordet måste bestå av 6-20 bokstäver, en storbokstav och minst en siffra");
-             return false;
-            }
-          }
-          </script>
-
+        <div>
+          <hr>
+          <h4>Have an account?</h4>
+          <a href="Login.html">Logga in här</a>
+        </div>
     </body>
 </html>

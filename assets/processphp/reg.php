@@ -83,7 +83,6 @@ function AddToDb($pword,$email,$uname,$randomSalt){
 			}
 	$con->close();
 
-
 }
 
   ?>

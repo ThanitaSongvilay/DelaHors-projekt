@@ -1,11 +1,12 @@
 html, body {
-    height : 100%;
+    height : 50%;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 #map{
-    margin: 0;
+    margin: auto;
     height:400px;
     width:100%;
+
 }

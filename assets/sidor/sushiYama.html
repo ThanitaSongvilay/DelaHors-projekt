@@ -9,8 +9,8 @@
     <meta charset="UTF-8">
     <style>
       #map{
-        height: 400px;
-        width: 100%;
+        height: 350px;
+        width: 30%;
       }
     </style>
   </head>
@@ -68,7 +68,7 @@
           {
             //Map options
             var options = {
-              zoom: 13,
+              zoom: 15,
               center: {lat: 59.85882, lng:17.63889}
             }
             //New map
@@ -78,6 +78,14 @@
             var marker = new google.maps.Marker({
               position:{lat:59.85888, lng:17.64631},
               map:map
+            });
+
+            var infoWindow = new google.maps.InfoWindow({
+              content:'<h1>Sushi Yama</h1><p>Olof Palmes Plats 10</p>'
+            });
+
+            marker.addListener('click', function(){
+              infoWindow.open(map, marker);
             });
           }
         </script>
@@ -105,6 +113,6 @@
             <button id="skicka" type="submit" class="skicka">Skicka in</button>
             <br>
         </form>
-        
+
   </body>
 </html>

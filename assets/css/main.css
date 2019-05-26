@@ -88,7 +88,7 @@ nav ul li a{
   text-align: left;
   font-family:'Open Sans', monospace;
   font-size: 14px;
-  padding: 22px 14px;
+  padding: 20px 12px;
   text-decoration: none;
 }
 
@@ -149,6 +149,14 @@ grid-gap: 5px 5px;
 .bild{
 float: left;
 width: 250px;
+}
+
+.restLänk a{
+  color: #77a8a8;
+  background-color: transparent;
+  text-decoration: none;
+  text-decoration: underline;
+  font-size: 20px;
 }
 
 /*CSS FOR THE GRID*/

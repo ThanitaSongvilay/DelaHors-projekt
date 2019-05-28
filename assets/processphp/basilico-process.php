@@ -28,7 +28,7 @@
 	else{
           echo("Error description: ". mysqli_error($con));
 	}
-
+$con->close();
 
 
 

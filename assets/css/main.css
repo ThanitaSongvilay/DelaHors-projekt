@@ -5,12 +5,15 @@ body{
 }
 
 .dropDown{
-  line-height: 25px;
+  line-height: 25px;  
+  border: none;
+  border-bottom: 3px solid #444;
 }
 nav h5{
   color: black;
   font-family:'Open Sans', monospace;
   font-size: 14px;
+
 }
 
 nav p{

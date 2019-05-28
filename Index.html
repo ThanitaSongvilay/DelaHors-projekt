@@ -7,20 +7,36 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <script type="text/javascript" src="assets/js/index.js"></script> <!-- koppla till js-->
   </head>
-  <body>
-    <nav>
-      <p>RestauRank </p>
-      <div class="dropDown">
-        <ul>
-        <li><a href="index.html">Hem</a>
-        </ul>
-        <ul>
-        <li><a href="#">Restauranger</a>
-        <ul>
-        <li><a href="assets/sidor/italienskt.html">Italienskt</a>
-        <li><a href="assets/sidor/asiatiskt.html">Asiatiskt</a>
-        </ul>
-      </div>
+<body>
+
+  <!--för att visa navbaren så krävs denna kod,
+vi behöver dock ändra allt till .php för att se.
+Tanken är att erstätta navbar och log in till denna rad kod. -->
+    <!--  <?php
+include 'assets/sidor/navbar.php'
+      ?>-->
+      <nav>
+        <p>RestauRank - Registrering</p>
+        <div class="dropDown">
+          <ul>
+          <li><a href="Index.html">Hem</a>
+          </ul>
+          <ul>
+          <li><a href="#">Restauranger</a>
+          <ul>
+          <li><a href="assets/sidor/italienskt.html">Italienskt</a>
+          <li><a href="assets/sidor/asiatiskt.html">Asiatiskt</a>
+          </ul>
+        </div>
+      </nav>
+<h> Om oss </h>
+<p> Hej och välkommen till vår hemsida!
+  <br> Här kan du som användare logga in och kommentera vad ni tycker om olika restauranger.<br>
+  <br>Som fyra studenter vet vi hur tråkigt det är att slösa pengar på dåliga mat-upplevelser när man väl bestämmer
+  sig att dra pengar från studentkontot. Därför har vi skapat detta forum som tillåter dig välja restaurang eller eller tipsa andra om
+  bra restauranger! <p>
+
+
       <br>
       <div id= "logInContainer">
         <form id="form" name="form" method="POST" action="assets/processphp/logIn.html"onsubmit= "return (kolla())">
@@ -28,12 +44,28 @@
             <input type="text" placeholder="Användarnamn" name="Namn" id="Namn"/>
           </div>
           <div>
-            <input type="text" placeholder="Lösenord" name="password" id="Losen"/>
+            <input type="password" placeholder="Lösenord" name="password" id="Losen"/>
           </div>
           <div id="Knapp">
             <button type="submit">Logga in</button>
             <h5> Jag vill skapa ett konto!  <a href="registrera.html"> Registrera dig här</a></h5>
         </form>
       </div>
-    </body>
+
+      <div>
+        <h2>Here you can search through the different reviews *exempel bara*</h2>
+
+        <form>
+          <select name="restauranger">
+            <option value="pong">Pong</option>
+            <option value="sushiyama">Sushi Yama</option>
+            <option value="basilico">Basilico</option>
+            <option value="ilforno">Il Forno Italiano</option>
+          </select>
+          <br><br>
+          <input type="submit">
+        </form>
+
+      </div>
+</body>
 </html>

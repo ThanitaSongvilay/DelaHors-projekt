@@ -30,7 +30,6 @@ $pword="";
 $SHpword="";
 $randomSalt=Salt();
 
-
 if(isset($_POST['regUname'])){
 	$uname=$_POST["regUname"]; }
 
@@ -53,15 +52,13 @@ if(isset($_POST['regUpassword'])){
 	else if(mysqli_num_rows($res_e) >0){
 		echo"Epost adressen används redan!";
 	}
-
 	else{
 		AddToDb($SHpword,$email,$uname,$randomSalt);
 	}
 
-
 function AddToDb($pword,$email,$uname,$randomSalt){
 
-        $host="dbtrain.im.uu.se";
+    $host="dbtrain.im.uu.se";
 		$dbusername="dbtrain_1044";
 		$password="gkpdxr";
 		$dbname="dbtrain_1044";
@@ -76,13 +73,10 @@ function AddToDb($pword,$email,$uname,$randomSalt){
 
 	if($con->query($sql)=== TRUE){
 			echo "$sql"; /* ändra sen till sidan för inloggade*/
-
 		}
 		else{
 			 echo "ERROR $sql";
 			}
 	$con->close();
-
 }
-
   ?>

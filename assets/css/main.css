@@ -46,6 +46,23 @@ input[type=text]{
   width: 150px
 }
 
+input[type=password]{
+
+ color: #004D40;
+ background-color: white;
+ border-bottom: solid 2px #4DB6AC;
+ outline: none;
+ z-index: 20;
+ padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-style: hidden;
+  box-sizing: none;
+  margin-top: 0px;
+  font-size: 12px;
+  width: 150px
+}
+
 button{
   background-color: grey;
 border: none;
@@ -149,9 +166,30 @@ nav{
 grid-gap: 5px 5px;
 }
 
-.bild{
+#pongBild{
 float: left;
 width: 250px;
+}
+
+#sushiYamaBild
+{
+  float: left;
+  width: 350px;
+  height: 255px;
+}
+
+#basilicoBild
+{
+  float: left;
+  width: 350px;
+  height: 255px;
+}
+
+#IlFIBild
+{
+  float: left;
+  width: 350px;
+  height: 255px;
 }
 
 .restLänk a{
@@ -162,12 +200,13 @@ width: 250px;
   font-size: 20px;
 }
 .PongIMG{
-  width: 700px;
-  length:900px;
+  width: 668px;
+  height: 582px;
   margin-bottom: 70px;
 }
 title{
-  align: center;
+  text-align: center;
+  margin: auto;
 }
 
 #map{

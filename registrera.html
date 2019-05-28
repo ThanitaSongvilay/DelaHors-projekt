@@ -7,7 +7,7 @@
     </head>
     <body>
       <nav>
-        <p>RestauRank - Registrering</p>
+        <p>RestauRank</p>
         <div class="dropDown">
           <ul>
             <li><a href="Index.html">Hem</a>
@@ -21,28 +21,34 @@
         </div>
       </nav>
       <br>
+      <br>
+      <div id="textAdmin">
+        <ff> Här kan du registrera dig för att se användares kommentarer om restaurangerna samt själv kunna kommentera</ff>
+      </div>
+      <br>
+      <br>
       <div>
         <form name="RegisForm" action="assets/processphp/reg.php" method="post" onsubmit="return validateForm()">
             <UserName>Användarnamn:</UserName>
             <br>
-            <input type="text" name="regUname" id="regUname" required>
+            <input type="text" name="regUname" id="regUname" placeholder="Namn" required>
             <br>
             <br>
             <UserEmail>Email:</UserEmail>
             <br>
-            <input type="text" name="regUemail" id="regUemail" required>
+            <input type="text" name="regUemail" id="regUemail" placeholder="Email" required>
             <br>
             <br>
-            <UserPassword>Password:</UserPassword>
+            <UserPassword>Lösenord:</UserPassword>
             <br>
-            <input type="password" name="regUpassword" id="regUpassword" required>
+            <input type="password" name="regUpassword" id="regUpassword" placeholder="Lösenord" required>
             <br>
             <br>
             <button id="regButton" type="sumbit" class="regButton">Register</button>
         </form>
         </div>
         <div>
-          <hr>
+          <br>
           <h4>Har du redan ett konto?</h4>
           <a href="Index.html">Logga in här</a>
         </div>

@@ -49,8 +49,10 @@
           </i></h3>
         </div>
         <div class="restLänk">
-          <a href="http://www.basilico.se/meny.html">Meny</a><br>
-          <a href="http://www.basilico.se/kontakt.html">Kontakt</a>
+          <a href="http://www.basilico.se/meny.html" target="_blank">Meny</a><br>
+          <br>
+          <a href="http://www.basilico.se/kontakt.html">Kontakt</a><br>
+          <br>
         </div>
         <div>
           <h4><i>Hitta hit!</i></h4>
@@ -76,7 +78,7 @@
             });
 
             var infoWindow = new google.maps.InfoWindow({
-              content:'<h1>Basilico</h1><p>Svartbäcksgatan 24</p>'
+              content:'<h1>Basilico</h1><tt>Svartbäcksgatan 24</tt>'
             });
 
             marker.addListener('click', function(){
@@ -87,6 +89,13 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrRyzQ557WJLJOFj6qpceKnANh4Szwcjw&callback=initMap"
     async defer></script>
 
+
+<!-- för att inkludera basilicos kommentarer. -->
+<!--
+    <?php
+      include 'basilico-process.php';
+      ?>
+    -->
     <div>
       <?php
 		include	'../processphp/basilico-process.php';

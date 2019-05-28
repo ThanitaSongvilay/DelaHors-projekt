@@ -25,6 +25,12 @@ nav p{
   padding: 7px 20px;
 }
 
+#admin p
+{
+  font-size: 15px;
+  text-align: left;
+}
+
 #sökruta
 {
   position: absolute;
@@ -36,7 +42,6 @@ nav p{
   border-radius: 40px;
   padding: 10px;
 }
-
 
 /*input{
   width: 50%;

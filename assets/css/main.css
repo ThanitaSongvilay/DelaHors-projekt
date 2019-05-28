@@ -46,6 +46,23 @@ input[type=text]{
   width: 150px
 }
 
+input[type=password]{
+
+ color: #004D40;
+ background-color: white;
+ border-bottom: solid 2px #4DB6AC;
+ outline: none;
+ z-index: 20;
+ padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-style: hidden;
+  box-sizing: none;
+  margin-top: 0px;
+  font-size: 12px;
+  width: 150px
+}
+
 button{
   background-color: grey;
 border: none;

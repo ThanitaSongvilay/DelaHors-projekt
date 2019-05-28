@@ -25,7 +25,7 @@
       </div>
       <div id="Knapp">
         <button type="submit">Logga in</button>
-        <h4> Jag vill skapa ett konto!  <a href="../../registrera.html"> Registrera dig här</a></h4>
+        <h4> Jag vill skapa ett konto! <br>  <a href="../../registrera.html"> Registrera dig här</a></h4>
       </div>
       </nav>';
 

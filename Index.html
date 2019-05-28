@@ -9,19 +9,34 @@
   </head>
 <body>
 
-    <nav>
-      <p>RestauRank </p>
-      <div class="dropDown">
-        <ul>
-        <li><a href="index.html">Hem</a>
-        </ul>
-        <ul>
-        <li><a href="#">Restauranger</a>
-        <ul>
-        <li><a href="assets/sidor/italienskt.html">Italienskt</a>
-        <li><a href="assets/sidor/asiatiskt.html">Asiatiskt</a>
-        </ul>
-      </div>
+  <!--för att visa navbaren så krävs denna kod,
+vi behöver dock ändra allt till .php för att se.
+Tanken är att erstätta navbar och log in till denna rad kod. -->
+    <!--  <?php
+include 'assets/sidor/navbar.php'
+      ?>-->
+      <nav>
+        <p>RestauRank - Registrering</p>
+        <div class="dropDown">
+          <ul>
+          <li><a href="Index.html">Hem</a>
+          </ul>
+          <ul>
+          <li><a href="#">Restauranger</a>
+          <ul>
+          <li><a href="assets/sidor/italienskt.html">Italienskt</a>
+          <li><a href="assets/sidor/asiatiskt.html">Asiatiskt</a>
+          </ul>
+        </div>
+      </nav>
+<h> Om oss </h>
+<p> Hej och välkommen till vår hemsida!
+  <br> Här kan du som användare logga in och kommentera vad ni tycker om olika restauranger.<br>
+  <br>Som fyra studenter vet vi hur tråkigt det är att slösa pengar på dåliga mat-upplevelser när man väl bestämmer
+  sig att dra pengar från studentkontot. Därför har vi skapat detta forum som tillåter dig välja restaurang eller eller tipsa andra om
+  bra restauranger! <p>
+
+
       <br>
       <div id= "logInContainer">
         <form id="form" name="form" method="POST" action="assets/processphp/logIn.html"onsubmit= "return (kolla())">

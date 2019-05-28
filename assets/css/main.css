@@ -233,6 +233,10 @@ title{
   font-size: 18px;
 }
 
+#p{
+  font-size: 10px;
+}
+
 /*CSS FOR THE GRID*/
 /*.grid-container{
   display: grid;

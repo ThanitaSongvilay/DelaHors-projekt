@@ -35,5 +35,28 @@
             <h5> Jag vill skapa ett konto! <br> <a href="registrera.html"> Registrera dig här</a></h5>
         </form>
       </div>
+      <div id="textAdmin">
+        <p> Här kan du logga in som administratör </p>
+      </div>
+      <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form name="RegisForm" action="../processphp/reg.php" method="post" onsubmit="return validateForm()">
+            <UserEmail>Email:</UserEmail>
+            <br>
+            <input type="text" name="regUemail" id="regUemail" required>
+            <br>
+            <br>
+            <UserPassword>Lösenord:</UserPassword>
+            <br>
+            <input type="password" name="regUpassword" id="regUpassword" required>
+            <br>
+            <br>
+            <button id="regButton" type="sumbit" class="regButton">Logga in</button>
+        </form>
+        </div>
   </body>
 </html>

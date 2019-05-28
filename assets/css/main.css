@@ -31,6 +31,12 @@ nav p{
   text-align: left;
 }
 
+#textAdmin p
+{
+  font-size: 15px;
+  text-align: right;
+}
+
 #sökruta
 {
   position: absolute;

@@ -88,12 +88,16 @@
     async defer></script>
 
     <div>
-      <h3><i>Vi får fixa så att kommentarerna syns här typ</i></h3>
+      <?php
+		include	'../processphp/basilico-process.php';
+	  ?>
     </div>
+
+
 
     <!--Form så att användare ska kunna kommentera-->
     <h2><b>Lämna gärna en kommentar här om vad du tycker om Il Forno Italiano!</b><h2>
-        <form>
+        <form method="POST" action="../processphp/insert-basilico.php" onsubmit"">
             <br>
             <input type="text" name="användarNamn" id="användarNamn">
             <br>

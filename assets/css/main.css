@@ -167,6 +167,12 @@ title{
   align: center;
 }
 
+#map{
+      height: 350px;
+      width: 30%;
+      margin: auto;
+}
+
 /*CSS FOR THE GRID*/
 /*.grid-container{
   display: grid;

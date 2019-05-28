@@ -31,7 +31,6 @@ nav p{
   text-align: left;
 }
 
-
 #sökruta
 {
   position: absolute;
@@ -42,6 +41,10 @@ nav p{
   height: 40px;
   border-radius: 40px;
   padding: 10px;
+}
+
+a{
+  color: blue;
 }
 
 /*input{
@@ -234,9 +237,8 @@ title{
   font-size: 18px;
 }
 
-ff{
-  font-family: 'Open Sans', monospace;
-  font-size: 18px;
+#ff{
+  font-size: 10px;
   text-align: center;
   margin: auto;
 }

@@ -239,8 +239,10 @@ title{
   font-size: 18px;
 }
 
-#p{
+#ff{
   font-size: 10px;
+  text-align: center;
+  margin: auto;
 }
 
 /*CSS FOR THE GRID*/

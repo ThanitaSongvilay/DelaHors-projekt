@@ -149,9 +149,30 @@ nav{
 grid-gap: 5px 5px;
 }
 
-.bild{
+#pongBild{
 float: left;
 width: 250px;
+}
+
+#sushiYamaBild
+{
+  float: left;
+  width: 350px;
+  height: 255px;
+}
+
+#basilicoBild
+{
+  float: left;
+  width: 350px;
+  height: 255px;
+}
+
+#IlFIBild
+{
+  float: left;
+  width: 350px;
+  height: 255px;
 }
 
 .restLänk a{

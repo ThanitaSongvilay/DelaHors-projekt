@@ -1,4 +1,6 @@
 <?php
+  echo
+  '
 <nav>
   <p>RestauRank </p>
   <div class="dropDown">
@@ -12,8 +14,6 @@
     <li><a href="asiatiskt.html">Asiatiskt</a>
     </ul>
   </div>
-
-
   <br>
   <div id= "logInContainer">
     <form id="form" name="form" method="POST" action="assets/processphp/logIn.html"onsubmit= "return (kolla())">
@@ -27,5 +27,6 @@
         <button type="submit">Logga in</button>
         <h4> Jag vill skapa ett konto!  <a href="../../registrera.html"> Registrera dig här</a></h4>
       </div>
-      </nav>
- ?>
+      </nav>';
+
+      ?>

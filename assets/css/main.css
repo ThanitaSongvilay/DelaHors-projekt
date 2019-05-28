@@ -11,6 +11,8 @@ nav h5{
   color: grey;
   font-family:'Open Sans', monospace;
   font-size: 14px;
+  border: none;
+  border-bottom: 3px solid #444;
 }
 
 nav p{

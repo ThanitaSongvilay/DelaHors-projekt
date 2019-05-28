@@ -7,108 +7,74 @@
 <link rel="stylesheet" href="../css/main.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 <script type="text/javascript" src="assets/js/index.js"></script> <!-- koppla till js-->
-
-
-<title>Pong</title>
-<style>
-  #map{
-    height:400px;
-    width:100%;
-  }
-</style>
-  </head>
-  <body>
-    <nav>
-      <p>RestauRank </p>
-      <div class="dropDown">
-        <ul>
-        <li><a href="../../Index.html">Hem</a>
-        </ul>
-        <ul>
-        <li><a href="#">Restauranger</a>
-        <ul>
-        <li><a href="italienskt.html">Italienskt</a>
-        <li><a href="asiatiskt.html">Asiatiskt</a>
-        </ul>
-      </div>
-      <br>
-      <div id= "logInContainer">
-        <form id="form" name="form" method="POST" action="assets/processphp/logIn.html"onsubmit= "return (kolla())">
-          <div>
-            <input type="text" placeholder="Användarnamn" name="Namn" id="Namn"/>
-          </div>
-          <div>
-            <input type="text" placeholder="Lösenord" name="password" id="Losen"/>
-          </div>
-          <div id="Knapp">
-            <button type="submit">Logga in</button>
-            <h4> Jag vill skapa ett konto!  <a href="../../registrera.html"> Registrera dig här</a></h4>
-          </div>
-        </form>
-      <p>Pong</p>
-      <h3><i>Välkommen till pong!</i></h3>
-      <div id="img">
-        <img src="../img/Pong_In.jpg" class="PongIMG">
-      </div>
-  <div id ="map"></div>
+  <title>Pong</title>
+  <style>
+    #map{
+      height: 350px;
+      width: 30%;
+      margin: auto;
+    }
+  </style>
+    </head>
+    <body>
+      <nav>
+        <p>RestauRank </p>
+        <div class="dropDown">
+          <ul>
+          <li><a href="../../Index.html">Hem</a>
+          </ul>
+          <ul>
+          <li><a href="#">Restauranger</a>
+          <ul>
+          <li><a href="italienskt.html">Italienskt</a>
+          <li><a href="asiatiskt.html">Asiatiskt</a>
+          </ul>
+        </div>
+        <br>
+        <div id= "logInContainer">
+          <form id="form" name="form" method="POST" action="assets/processphp/logIn.html"onsubmit= "return (kolla())">
+            <div>
+              <input type="text" placeholder="Användarnamn" name="Namn" id="Namn"/>
+            </div>
+            <div>
+              <input type="text" placeholder="Lösenord" name="password" id="Losen"/>
+            </div>
+            <div id="Knapp">
+              <button type="submit">Logga in</button>
+              <h4> Jag vill skapa ett konto!  <a href="../../registrera.html"> Registrera dig här</a></h4>
+            </div>
+          </form>
+        <p>Pong</p>
+        <h3><i>Välkommen till pong!</i></h3>
+        <div id="img">
+          <img src="../img/Pong_In.jpg" class="PongIMG">
+        </div>
+    <div id ="map"></div>
   <script>
-  //längst ner i länken finns det ngt som kallas för callback innitmap
-  //Vilket tyder på att
-  function initMap(){
+  function initMap()
+  {
+    //Map options
     var options = {
-      zoom:8,
-      center:{lat:59.858131,lng:17.644621}
+      zoom: 15,
+      center: {lat: 59.86027, lng:17.64575}
     }
+    //New map
+    var map = new google.maps.Map(document.getElementById('map'), options);
 
-   var map = new google.maps.Map(document.getElementById('map'),options);
-    //Listen for click on mapp
-    google.maps.event.addListner(map, 'click', function(event){
-      //add marker
-      addMarker({coords: event.latLng});
+    //Add marker
+    var marker = new google.maps.Marker({
+      position:{lat:59.86027, lng:17.64575},
+      map:map
     });
-    /*var markers = [
-      {
-        coords:{lat:59.862080, lng:17.642770},
-        iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-        content:'<h1>Pong,Uppsala</h1>',
-      }
-    ];
 
-    //loop through markes
-    for(var i=0;i  markers.length;i++){
-      //add marker
-      addMarker(markers[i]);
-    }
+    var infoWindow = new google.maps.InfoWindow({
+      content:'<h1>Pong</h1><p>Storgatan 27</p>'
+    });
 
-    function addMarker(props){
-      var marker = new google.maps.Marker
-      ({
-        position:props.coords,
-        map:map,
-      });
-      // Check content
-      if(props.content){
-        var infowindow = new google.maps.InfoWindow({
-          content:props.content
-        });
-        marker.addListner('click', function(){
-          infoWindow.open(map, marker);
-        });
-      }
-    }*/
+    marker.addListener('click', function(){
+      infoWindow.open(map, marker);
+    });
   }
-      /*  <!-- Detta är gammal kod till api-->
-<div id="map">
-</div>
-<script type="text/javascript">
-
-function initMap(){
-  var location = {lat: -59.858562,lng: 17.638927};
-  var map = new google.maps.Map(document.getElementById("map"),{
-    zoom: 4,
-    center: location
-  });
-}*/
 </script>
 
 <script async defer

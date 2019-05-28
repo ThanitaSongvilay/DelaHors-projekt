@@ -228,6 +228,11 @@ title{
       margin: auto;
 }
 
+#omOss p
+{
+  font-size: 18px;
+}
+
 /*CSS FOR THE GRID*/
 /*.grid-container{
   display: grid;

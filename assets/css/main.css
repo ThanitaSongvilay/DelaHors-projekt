@@ -8,7 +8,7 @@ body{
   line-height: 25px;
 }
 nav h5{
-  color: grey;
+  color: black;
   font-family:'Open Sans', monospace;
   font-size: 14px;
 }
@@ -88,18 +88,6 @@ font-size: 16px;
 border-radius: 4px;
 }
 
-/*input[type=password]{
-
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  border-style: hidden;
-  box-sizing: none;
-  margin-top: 20px;
-  font-size: 12px;
-  width: 150px
-}*/
-
 .logInContainer{
   float: right;
 }
@@ -116,7 +104,7 @@ button:hover{
 
 nav ul li a{
   display: block;
-  color: grey;
+  color: black;
   text-align: left;
   font-family:'Open Sans', monospace;
   font-size: 14px;

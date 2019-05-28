@@ -10,7 +10,10 @@ body{
 nav h5{
   color: black;
   font-family:'Open Sans', monospace;
-  font-size: 14px;
+  font-size: 14px;    
+  margin: -17px;
+  border: none;
+  border-bottom: 3px solid #444;
 
 }
 

@@ -200,12 +200,12 @@ width: 250px;
   font-size: 20px;
 }
 .PongIMG{
-  width: 700px;
-  length:900px;
+  width: 668px;
+  height: 582px;
   margin-bottom: 70px;
 }
 title{
-  align: center;
+  text-align: center;
 }
 
 #map{

@@ -5,9 +5,7 @@ body{
 }
 
 .dropDown{
-  line-height: 25px;  
-  border: none;
-  border-bottom: 3px solid #444;
+  line-height: 25px;
 }
 nav h5{
   color: grey;

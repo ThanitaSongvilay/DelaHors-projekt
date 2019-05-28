@@ -254,6 +254,12 @@ ff{
   border-bottom: 3px solid #444;
 }
 
+#regUname{
+  border: none;
+  background-color;
+  border-bottom: 3px solid #444;
+}
+
 /*CSS FOR THE GRID*/
 /*.grid-container{
   display: grid;

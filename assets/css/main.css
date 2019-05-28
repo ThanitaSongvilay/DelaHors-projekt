@@ -240,7 +240,8 @@ title{
 }
 
 ff{
-  font-size: 10px;
+  font-family: 'Open Sans', monospace;
+  font-size: 18px;
   text-align: center;
   margin: auto;
 }

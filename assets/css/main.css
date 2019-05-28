@@ -245,7 +245,13 @@ ff{
  border: none;
  background-color: white;
  border-bottom: 3px solid #444;
- 
+
+}
+
+#regUpassword{
+  border: none;
+  background-color: white;
+  border-bottom: 3px solid #444;
 }
 
 /*CSS FOR THE GRID*/

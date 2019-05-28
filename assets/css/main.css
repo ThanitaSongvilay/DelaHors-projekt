@@ -243,6 +243,25 @@ title{
   margin: auto;
 }
 
+#regUemail{
+ border: none;
+ background-color: white;
+ border-bottom: 3px solid #444;
+
+}
+
+#regUpassword{
+  border: none;
+  background-color: white;
+  border-bottom: 3px solid #444;
+}
+
+#regUname{
+  border: none;
+  background-color;
+  border-bottom: 3px solid #444;
+}
+
 /*CSS FOR THE GRID*/
 /*.grid-container{
   display: grid;

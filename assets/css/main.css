@@ -8,10 +8,12 @@ nav{
   height: 120px;
   background-color: #77a8a8;
   margin: -17px;
-  border: none;
-  border-bottom: 3px solid #444;
+  /*border: none;
+  border-bottom: 3px solid #444;*/
   width: 104%;
 }
+
+
 
 .dropDown{
   line-height: 25px;
@@ -20,8 +22,9 @@ nav h5{
   color: black;
   font-family:'Open Sans', monospace;
   font-size: 14px;    
-
+  text-align: right;
 }
+
 
 nav p{
   color: black;
@@ -40,13 +43,15 @@ nav p{
   text-align: left;
 }
 
+
+
 #sökruta
 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: grey;
+  background: white;
   height: 40px;
   border-radius: 40px;
   padding: 10px;
@@ -178,13 +183,13 @@ nav ul li ul li{
   grid-gap: 5px 5px;
   border: none;
   background-color: white;
-  border-bottom: 3px solid #444;
+  /*border-bottom: 3px solid #444;*/
 }
 #Losen{
 grid-gap: 5px 5px;
 border: none;
 background-color: white;
-border-bottom: 3px solid #444;
+/*border-bottom: 3px solid #444;*/
 }
 
 #pongBild{

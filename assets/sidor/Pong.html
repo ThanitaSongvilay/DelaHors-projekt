@@ -103,14 +103,14 @@
   ?>
   </div>
         <h2><b>Lämna gärna en kommentar här om vad du tycker om Pong!</b><h2>
-        <form method="POST" action="../processphp/insert-pong.php" onsubmit="">
+        <form name="kommentarForm" method="POST" action="../processphp/insert-pong.php" onsubmit"return kollaKommentar()">
             <br>
-            <input type="text" name="användarNamn" id="användarNamn">
+            <input type="text" name="användarNamn" id="användarNamn" placeholder="Användarnamn">
             <br>
             <p>Namn:</p>
             <br>
             <br>
-            <input type="text" name="kommentar" id="kommentar">
+            <input type="text" name="kommentar" id="kommentar" placeholder="Kommentar">
             <br>
             <p>Kommentar</p>
             <br>

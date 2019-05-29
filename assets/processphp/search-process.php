@@ -9,7 +9,7 @@
   {die("Connection failed: " .$con.connect_error);}
 
   $search= $_POST['sökruta'];
-  $sql="SELECT Name,url FROM Restaurang WHERE Name='$search'";
+  $sql="SELECT Name,url FROM Restaurang WHERE Name LIKE '$search'";
   $save=mysqli_query($con,$sql);
 
   if(mysqli_num_rows($save)>0){

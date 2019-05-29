@@ -30,6 +30,7 @@
 		echo ' <p> '.$row["Namn"].'</p>';
 		echo ' <p>'.$row["Kommentar"].'</p>';
 		echo'</div>';
+		echo"<hr>";
 
 	}
 $con->close();

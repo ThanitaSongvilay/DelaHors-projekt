@@ -16,9 +16,9 @@
     while($save = mysqli_fetch_assoc($save))
     {
       echo '<div id="sökresultat"';
+      echo '<h1>'.$save['Name'].'</h1>';
       echo '<tr><td>'.$save['url'].'</td>';
-      //echo '<h1>'.$save['Name'].'</h1>';
-      echo '<a href="'.$save['url'].'"Klicka här!</a>';
+      //echo '<a href="'.$save['url'].'"Klicka här!</a>';
       echo '</div>';
       echo "<br>";
     }

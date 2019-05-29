@@ -30,6 +30,7 @@
 		echo'<div class="kommentarer">';
 		echo ' <p> '.$row["Namn"].'</p>';
 		echo ' <p>'.$row["Kommentar"].'</p>';
+		echo "<a href=http://localhost/grupp11_2019/assets/processphp/delete-process.php?KomId=".$row['KomId'].">Delete</a>";
 		echo'</div>';
 		echo"<hr>";
 		}

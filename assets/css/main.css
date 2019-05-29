@@ -20,8 +20,9 @@ nav h5{
   color: black;
   font-family:'Open Sans', monospace;
   font-size: 14px;    
-
+  text-align: right;
 }
+
 
 nav p{
   color: black;
@@ -40,9 +41,7 @@ nav p{
   text-align: left;
 }
 
-#ruta{
-  margin: auto;
-}
+
 
 #sökruta
 {

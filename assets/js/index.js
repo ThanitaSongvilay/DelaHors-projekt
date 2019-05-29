@@ -14,6 +14,18 @@ function kolla()
     }
 }
 
+function kollaSök()
+{
+    var sök = document.sökruta.sök.value;
+
+      if(sök.trim() == "")
+    {
+      alert("Du måste skriva in någonting i sökrutan för att kunna söka fkn idiot...");
+      return false;
+    }
+}
+
+
 function validateForm()
 {
   var uname = document.RegisForm.regUname.value;

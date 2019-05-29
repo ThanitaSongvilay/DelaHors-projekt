@@ -43,7 +43,7 @@ $res_test=mysqli_query($con,$sql_test);
 
 if(mysqli_num_rows($res_test) == 0){
 	echo("'<script> alert('Användaren finns inte!');</script>'");
-	header("Refresh: 1;URL=../../index.php");
+	header("Refresh: 1;URL=../../index.html");
 }
 
 else if(mysqli_num_rows($res_test)>0){
@@ -62,7 +62,7 @@ else if(mysqli_num_rows($res_test)>0){
 	}
 	else{
 		echo "Ditt lösenord eller användarnamn är fel, vänligen prova igen" ;
-		header("Refresh:2; URL=../../index.php");
+		header("Refresh:2; URL=../../index.html");
 	}
 
 }

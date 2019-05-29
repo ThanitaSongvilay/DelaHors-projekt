@@ -1,3 +1,4 @@
+//kollar inloggning för användaren
 function kolla()
 {
       var namn = document.form.Namn.value;
@@ -14,6 +15,7 @@ function kolla()
     }
 }
 
+//kollar sökfälltet
 function kollaSök()
 {
     var sök = document.sökruta.sök.value;

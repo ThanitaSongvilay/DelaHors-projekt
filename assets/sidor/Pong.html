@@ -97,7 +97,7 @@
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrRyzQ557WJLJOFj6qpceKnANh4Szwcjw&callback=initMap">
   </script>
         <h2><b>Lämna gärna en kommentar här om vad du tycker om Pong!</b><h2>
-        <form>
+        <form name="kommentarForm" method="POST" action="../processphp/insert-basilico.php" onsubmit"return kollaKommentar()">
             <br>
             <input type="text" name="användarNamn" id="användarNamn">
             <br>

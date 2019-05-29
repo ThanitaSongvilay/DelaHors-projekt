@@ -91,7 +91,7 @@
     <?php
       include 'basilico-process.php';
       ?>
-  
+
     <div>
       <?php
 		include	'../processphp/basilico-process.php';
@@ -102,13 +102,12 @@
 
     <!--Form så att användare ska kunna kommentera-->
     <h2><b>Lämna gärna en kommentar här om vad du tycker om Il Forno Italiano!</b><h2>
-        <form method="POST" action="../processphp/insert-basilico.php" onsubmit"">
+        <form name="kommentarForm" method="POST" action="../processphp/insert-basilico.php" onsubmit"return kollaKommentar()">
             <br>
             <input type="text" name="användarNamn" id="användarNamn">
             <br>
             <p>Namn:</p>
             <br>
-
             <input type="text" name="kommentar" id="kommentar">
             <br>
             <p>Kommentar</p>

@@ -26,7 +26,6 @@
   }
   $con->close();
 
-  header('Location: Index.html');
 
 
 

@@ -8,8 +8,8 @@ nav{
   height: 120px;
   background-color: #77a8a8;
   margin: -17px;
-  border: none;
-  border-bottom: 3px solid #444;
+  /*border: none;
+  border-bottom: 3px solid #444;*/
   width: 104%;
 }
 
@@ -178,13 +178,13 @@ nav ul li ul li{
   grid-gap: 5px 5px;
   border: none;
   background-color: white;
-  border-bottom: 3px solid #444;
+  /*border-bottom: 3px solid #444;*/
 }
 #Losen{
 grid-gap: 5px 5px;
 border: none;
 background-color: white;
-border-bottom: 3px solid #444;
+/*border-bottom: 3px solid #444;*/
 }
 
 #pongBild{

@@ -1,3 +1,4 @@
+//kollar inloggning för användaren
 function kolla()
 {
       var namn = document.form.Namn.value;
@@ -10,6 +11,29 @@ function kolla()
     }
       if(pass.trim() == ""){
       alert("Skriv in ditt lösenord.");
+      return false;
+    }
+}
+
+//kollar sökfälltet
+function kollaSök()
+{
+    var sök = document.sökruta.sök.value;
+
+      if(sök.trim() == "")
+    {
+      alert("Du måste skriva in någonting i sökrutan för att kunna söka fkn idiot...");
+      return false;
+    }
+}
+
+function kollaKommentar()
+{
+      var kommentar = document.kommentarForm.kommentar.value;
+
+      if(kommentar.trim() == "")
+    {
+      alert("Vänligen fyll i kommentarsfälltet");
       return false;
     }
 }

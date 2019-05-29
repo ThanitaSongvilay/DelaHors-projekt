@@ -18,7 +18,7 @@ function kolla()
 //kollar sökfälltet
 function kollaSök()
 {
-    var sök = document.sökruta.sök.value;
+    var sök = document.sökForm.sökruta.value;
 
       if(sök.trim() == "")
     {
@@ -29,7 +29,7 @@ function kollaSök()
 
 function kollaKommentar()
 {
-      var kommentar = document.kommentarForm.kommentar.value;
+    var kommentar = document.kommentarForm.kommentar.value;
 
       if(kommentar.trim() == "")
     {

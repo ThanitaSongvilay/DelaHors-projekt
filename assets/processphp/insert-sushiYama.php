@@ -32,6 +32,6 @@ function addToDatabase($namnet,$kommentar,$restID){
     }
 
     $con->close();
-	header("Location:../sidor/pong.php");
+	header("Location:../sidor/sushiYama.php");
 }
 ?>

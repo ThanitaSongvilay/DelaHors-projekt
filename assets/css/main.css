@@ -64,35 +64,37 @@ nav p{
   padding: 7px 20px;
 }
 
-#admin p
+.admin p
 {
-  font-size: 15px;
+  font-size: 12px;
   text-align: left;
+
 }
 
 
+h1{
+  margin-left: auto;
+     margin-right: auto;
+     width: 8em;
+ font-family:'Open Sans', monospace;
+}
 
 #sökruta
 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+top: 50px;
+float: left;
   background: white;
-  height: 40px;
-  border-radius: 40px;
+  height: 50%;
+  border-radius: 30px;
   padding: 10px;
+  margin-bottom: 90%;
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
 
 a{
   color: blue;
 }
 
-
-/*input{
-  width: 50%;
-  align: center;
-}*/
 
 input[type=text]{
 
@@ -108,7 +110,9 @@ input[type=text]{
   box-sizing: none;
   margin-top: 0px;
   font-size: 12px;
-  width: 150px
+  width: 150px;
+  font-family: 'Open Sans', monospace;
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
 
 input[type=password]{
@@ -125,11 +129,13 @@ input[type=password]{
   box-sizing: none;
   margin-top: 0px;
   font-size: 12px;
-  width: 150px
+  font-family: 'Open Sans', monospace;
+  width: 150px;box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
+
 }
 
 button{
-  background-color: grey;
+background-color: grey;
 border: none;
 color: white;
 padding: 8px 20px;
@@ -137,18 +143,19 @@ text-align: center;
 text-decoration: none;
 display: inline-block;
 font-size: 16px;
+font-family: 'Open Sans', monospace;
 border-radius: 4px;
+box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
 
-.logInContainer{
-  float: right;
-}
+
 
 nav .logInContainer button{
   padding: 6px;
   font-size: 12px;
   border: none;
   cursor: pointer;
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
 button:hover{
   color: #77a8a8;
@@ -268,10 +275,20 @@ title{
       margin: auto;
 }
 
-#omOss p
+.omOss p
 {
-  font-size: 18px;
+  font-size: 17px;
   margin: auto;
+  font-family: 'Open Sans', monospace;
+  margin-left: auto;
+   margin-right: auto;
+   width: 20em
+}
+.omOss{
+  align: center;
+  margin left: 40px;
+
+
 }
 
 #ff{
@@ -298,36 +315,3 @@ title{
   background-color: white;
   border-bottom: 3px solid #444;
 }
-
-/*CSS FOR THE GRID*/
-/*.grid-container{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 0px;
-  margin: auto;
-}
-
-.grid-item{
-  object-position:90% 90%;
-  border: 2px solid black;
-  border-image-outset: 0px;
-  padding: 0px 20px;
-  background-color:  #77a8a8;
-  margin: auto;
-}
-
-p{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: black;
-  border-image-outset: 0px;
-  text-transform: uppercase;
-  font-size: 13px;
-}
-img{
-  width: 60px;
-color:#77a8a8;
-}
-
-k{
-  object-position: 100% 100%
-}*/

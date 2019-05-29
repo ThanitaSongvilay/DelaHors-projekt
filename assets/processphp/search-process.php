@@ -10,16 +10,17 @@
 
   $search= $_POST['sökruta'];
   $sql="SELECT Name,url FROM Restaurang WHERE Name LIKE '$search'";
-  
+
   $save=mysqli_query($con,$sql);
 
+
   if(mysqli_num_rows($save)>0){
-    while($save = mysqli_fetch_assoc($save))
-    {
+
+	  while($row=$save-> fetch_assoc()){
       echo '<div id="sökresultat"';
-      echo '<h1>'.$save['Name'].'</h1>';
-      echo '<tr><td>'.$save['url'].'</td>';
-      //echo '<a href="'.$save['url'].'"Klicka här!</a>';
+      echo '<h1>'.$row['Name'].'</h1>';
+	  echo "<br>";
+	  echo "<a href='".$row['url']."'>clicka här!</a>";
       echo '</div>';
       echo "<br>";
     }

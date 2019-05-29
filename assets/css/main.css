@@ -13,6 +13,11 @@ nav{
   width: 104%;
 }
 
+#ruta{
+  text-align: left;
+  
+}
+
 .dropDown{
   line-height: 25px;
 }

@@ -86,6 +86,7 @@
         </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrRyzQ557WJLJOFj6qpceKnANh4Szwcjw&callback=initMap"
     async defer></script>
+    <br>
 
 
     <?php
@@ -98,22 +99,29 @@
 	  ?>
     </div>
 
-
-
     <!--Form så att användare ska kunna kommentera-->
     <h2><b>Lämna gärna en kommentar här om vad du tycker om Il Forno Italiano!</b><h2>
-        <form name="kommentarForm" method="post" action="../processphp/insert-basilico.php" onsubmit="return kollaKommentar()">
-            <br>
-            <input type="text" name="användarNamn" id="användarNamn" placeholder="Användarnamn">
-            <br>
-            <p>Namn:</p>
-            <br>
-            <input type="text" name="kommentar" id="kommentar" placeholder="Kommentar...">
-            <br>
-            <p>Kommentar</p>
-            <br>
-            <button id="skicka" type="submit">Skicka in</button>
-            <br>
+      <br>
+        <form class="kommentarForm" name="kommentarForm" method="post" action="../processphp/insert-basilico.php" onsubmit="return kollaKommentar()">
+        Användarnamn: <br/>
+        <br>
+        <input type="text" name="användarNamn" id="användarNamn" placeholder="Användarnamn"><br>
+        <br>
+        Kommentar: <br/>
+        <br>
+        <textarea type="text" name="kommentar" id="kommentar" placeholder="Kommentar..."></textarea><br/>
+        <br>
+        <button id="skicka" type="submit">Skicka in</button>
+        <br>
+        <br>
+        <h3> Kommentarsfällt: </h3>
+        <div name="kommentarsfallt" id="kommentarsfallt">
+          <p>
+            <?php
+    		    include	'../processphp/basilico-process.php';
+    	       ?>
+          </p>
+        </div>
         </form>
   </body>
 </html>

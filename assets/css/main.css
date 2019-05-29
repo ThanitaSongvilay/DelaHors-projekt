@@ -13,7 +13,34 @@ nav{
   width: 104%;
 }
 
+#kommentarsfallt
+{
+	width: 30%;
+	height: 550px;
+	padding-top: 1px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	overflow: auto;
+	border-radius: 20px; //rundade kanter
+}
 
+#kommentarsfallt p
+{
+		text-align: left;
+}
+
+#kommentar
+{
+  width: 20%;
+  padding: 8px; /*mellanrummet mellan det man skriver och kanten till höger*/
+  padding-top: 8px; /*padding uppe - där man börjar skriva texten från*/
+  padding-bottom: 80px;
+  resize: none; /*För att ta bort den grejen så användaren kan expandera rutan själv*/
+  border-radius: 12px; /*rundade kanter*/
+}
 
 .dropDown{
   line-height: 25px;
@@ -21,7 +48,7 @@ nav{
 nav h5{
   color: black;
   font-family:'Open Sans', monospace;
-  font-size: 14px;    
+  font-size: 14px;
   text-align: right;
 }
 

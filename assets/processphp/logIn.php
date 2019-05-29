@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-</head>
-<body>
-<?php
-session_start();
+	<head>
+	</head>
+	<body>
+	<?php
+	session_start();
+
 		$host="dbtrain.im.uu.se";
 		$dbusername="dbtrain_1044";
 		$password="gkpdxr";
@@ -62,7 +63,7 @@ else if(mysqli_num_rows($res_test)>0){
 		header("Refresh:2; URL=../../index.html");
 	}
 }
-$con->close();
-?>
-</body>
-</html>
+	$con->close();
+	?>
+	</body>
+	</html>

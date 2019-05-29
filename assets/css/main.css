@@ -23,6 +23,10 @@ nav h5{
 
 }
 
+nav reg h5{
+  float:right;
+}
+
 nav p{
   color: black;
   font-weight: bold;

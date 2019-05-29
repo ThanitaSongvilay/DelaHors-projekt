@@ -22,11 +22,11 @@
 	}
 
 	else if(mysqli_num_rows($res) == 0){
-		echo "No results found!";
+		echo "Hittade inga resultat!";
 	}
 
 	else{
-          echo("Error description: ". mysqli_error($con));
+          echo("Felmeddelande: ". mysqli_error($con));
 	}
 $con->close();
 

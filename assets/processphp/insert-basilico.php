@@ -12,7 +12,6 @@
 
 addToDatabase($namnet,$kommentar,$restID);
 
-
 function addToDatabase($namnet,$kommentar,$restID){
   $host="dbtrain.im.uu.se";
   $dbusername="dbtrain_1044";

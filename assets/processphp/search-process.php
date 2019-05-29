@@ -8,8 +8,8 @@
   if($con->connect_error)
   {die("Connection failed: " .$con.connect_error);}
 
-  $search= $_POST['sökruta'];
-  $sql="SELECT Name,url FROM Restaurang WHERE Name LIKE '$search'";
+  $search= $_POST['sökruta'];  
+  $sql="SELECT Name,url FROM Restaurang WHERE Name LIKE '%".$search."%'";
 
   $save=mysqli_query($con,$sql);
 

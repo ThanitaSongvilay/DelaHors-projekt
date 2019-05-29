@@ -9,12 +9,15 @@
   {die("Connection failed: " .$con.connect_error);}
 
   $search= $_POST['sökruta'];
-  $sql="SELECT url FROM Restaurang WHERE Name='$search'";
+  $sql="SELECT Name,url FROM Restaurang WHERE Name='$search'";
   $save=mysqli_query($con,$sql);
 
   if(mysqli_num_rows($save)>0){
     while($save = mysqli_fetch_assoc($save)){
-      echo '<a href="'.$save['url'].'"</a>';
+      echo '<div id="sökresultat"';
+      echo '<h1>'.$save['Name'].'</h1>';
+      echo '<a href="'.$save['url'].'"Klicka här!</a>';
+      echo '</div>';
       echo "<br>";
     }
   }
@@ -25,5 +28,5 @@
     echo("Felmeddelande: ".mysqli_error($con));
   }
   $con->close();
-  header('Location: Index.html');
+  //header('Location: Index.html');
 ?>

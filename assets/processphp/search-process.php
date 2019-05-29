@@ -8,7 +8,7 @@
   if($con->connect_error)
   {die("Connection failed: " .$con.connect_error);}
 
-  $search= $_POST['sök'];
+  $search= $_POST['sökruta'];
   $sql="SELECT url FROM Restaurang WHERE Name='$search'";
   $save=mysqli_query($con,$sql);
 
@@ -26,4 +26,8 @@
   }
   $con->close();
   header('Location: Index.html');
+
+
+
+
 ?>

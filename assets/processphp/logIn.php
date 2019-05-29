@@ -16,13 +16,10 @@ session_start();
 			die("Connection failed: " .$con.connect_error);
 		}
 
-
-
 	$uname="";
 	$pword="";
 	$uname=$con->real_escape_string($uname);
 	$pword=$con->real_escape_string($pword);
-
 
 	if(isset($_POST['username'])){
 	if(empty($_POST["username"])){
@@ -64,11 +61,8 @@ else if(mysqli_num_rows($res_test)>0){
 		echo "Ditt lösenord eller användarnamn är fel, vänligen prova igen" ;
 		header("Refresh:2; URL=../../index.html");
 	}
-
 }
 $con->close();
 ?>
-
-
 </body>
 </html>

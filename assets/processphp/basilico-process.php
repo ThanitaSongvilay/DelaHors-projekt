@@ -6,9 +6,7 @@
 	$con=new mysqli($host,$dbusername,$password,$dbname);
 
 	if($con->connect_error)
-	{
-		die("Connection failed: " .$con.connect_error);
-	}
+	{die("Connection failed: " .$con.connect_error);}
 
 	$sql="SELECT Kommentar FROM Kommentarer WHERE RestId == 5 ";
 	$res=mysqli_query($con,$sql);
@@ -17,19 +15,14 @@
 		while($row = mysqli_fetch_assoc($res)){
 			echo '<tr><td>'.$row['Kommentar'].'</td>';
 			echo "<br>";
-
 		}
 	}
 
 	else if(mysqli_num_rows($res) == 0){
 		echo "Hittade inga resultat!";
 	}
-
 	else{
-          echo("Felmeddelande: ". mysqli_error($con));
+    echo("Felmeddelande: ". mysqli_error($con));
 	}
 $con->close();
-
-
-
 ?>

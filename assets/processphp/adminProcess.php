@@ -13,6 +13,4 @@ if($con->connect_error)
 $sql= "DELETE  Namn, Kommentar FROM Kommentarer ";
 $save = $conn->query($sql);
 
-
-
  ?>

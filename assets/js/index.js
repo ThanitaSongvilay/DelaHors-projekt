@@ -13,6 +13,7 @@ function kolla()
       alert("Skriv in ditt lösenord.");
       return false;
     }
+    return true;
 }
 
 //kollar sökfälltet
@@ -37,6 +38,7 @@ function kollaKommentar()
       alert("Vänligen fyll i kommentarsfälltet");
       return false;
     }
+    return true;
 }
 
 function validateForm()

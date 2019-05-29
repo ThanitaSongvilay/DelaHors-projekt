@@ -40,6 +40,10 @@ nav p{
   text-align: left;
 }
 
+#ruta{
+  margin: top;
+}
+
 #sökruta
 {
   position: absolute;

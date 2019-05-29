@@ -14,7 +14,7 @@
 
   if(mysqli_num_rows($save)>0){
     while($save = mysqli_fetch_assoc($save)){
-      echo'<tr><td>'.$save['url'].'</td>';
+      echo '<a href="'.$save['url'].'"</a>';
       echo "<br>";
     }
   }
@@ -25,6 +25,5 @@
     echo("Felmeddelande: ".mysqli_error($con));
   }
   $con->close();
-
   header('Location: Index.html');
 ?>

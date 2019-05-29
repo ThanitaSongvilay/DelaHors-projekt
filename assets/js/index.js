@@ -27,6 +27,16 @@ function kollaSök()
     }
 }
 
+function kollaKommentar()
+{
+      var kommentar = document.kommentarForm.kommentar.value;
+
+      if(kommentar.trim() == "")
+    {
+      alert("Vänligen fyll i kommentarsfälltet");
+      return false;
+    }
+}
 
 function validateForm()
 {

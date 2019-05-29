@@ -25,5 +25,5 @@
     echo("Felmeddelande: ".mysqli_error($con));
   }
   $con->close();
-  header('Location: Index.html');
+
 ?>

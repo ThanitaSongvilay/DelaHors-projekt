@@ -25,6 +25,7 @@ function kollaSök()
       alert("Du måste skriva in någonting i sökrutan för att kunna söka fkn idiot...");
       return false;
     }
+    return true;
 }
 
 function kollaKommentar()

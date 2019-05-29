@@ -32,8 +32,9 @@ function kollaSök()
 function kollaKommentar()
 {
     var kommentar = document.kommentarForm.kommentar.value;
+    var namn = document.kommentarForm.användarNamn.value;
 
-      if(kommentar.trim() == "")
+      if(kommentar.trim() == "" || namn.trim()=="")
     {
       alert("Vänligen fyll i kommentarsfälltet");
       return false;

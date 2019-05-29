@@ -23,7 +23,6 @@ function Salt(){
 
 	return $randomSalt;
 }
-
 $uname="";
 $email="";
 $pword="";

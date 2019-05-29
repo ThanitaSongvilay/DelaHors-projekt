@@ -23,7 +23,7 @@ function kollaSök()
 
       if(sök.trim() == "")
     {
-      alert("Du måste skriva in någonting i sökrutan för att kunna söka fkn idiot...");
+      alert("Vänligen skriv in den restaurang du är intresserad av i sökrutan");
       return false;
     }
     return true;

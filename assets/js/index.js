@@ -13,29 +13,33 @@ function kolla()
       alert("Skriv in ditt lösenord.");
       return false;
     }
+    return true;
 }
 
 //kollar sökfälltet
 function kollaSök()
 {
-    var sök = document.sökruta.sök.value;
+    var sök = document.sökForm.sökruta.value;
 
       if(sök.trim() == "")
     {
       alert("Du måste skriva in någonting i sökrutan för att kunna söka fkn idiot...");
       return false;
     }
+    return true;
 }
 
 function kollaKommentar()
 {
-      var kommentar = document.kommentarForm.kommentar.value;
+    var kommentar = document.kommentarForm.kommentar.value;
+    //var namn = document.kommentarForm.användarNamn.value;
 
       if(kommentar.trim() == "")
     {
       alert("Vänligen fyll i kommentarsfälltet");
       return false;
     }
+    return true;
 }
 
 function validateForm()

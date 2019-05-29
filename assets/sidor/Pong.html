@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="../css/main.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-<script type="text/javascript" src="assets/js/index.js"></script> <!-- koppla till js-->
+<script type="text/javascript" src="../js/index.js"></script> <!-- koppla till js-->
 
   <style>
     #map{
@@ -96,15 +96,21 @@
 <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrRyzQ557WJLJOFj6qpceKnANh4Szwcjw&callback=initMap">
   </script>
+
+  <div>
+    <?php
+      include	'../processphp/pong-process.php';
+  ?>
+  </div>
         <h2><b>Lämna gärna en kommentar här om vad du tycker om Pong!</b><h2>
-        <form name="kommentarForm" method="POST" action="../processphp/insert-basilico.php" onsubmit"return kollaKommentar()">
+        <form name="kommentarForm" method="POST" action="../processphp/insert-pong.php" onsubmit"return kollaKommentar()">
             <br>
-            <input type="text" name="användarNamn" id="användarNamn">
+            <input type="text" name="användarNamn" id="användarNamn" placeholder="Användarnamn">
             <br>
             <p>Namn:</p>
             <br>
             <br>
-            <input type="text" name="kommentar" id="kommentar">
+            <input type="text" name="kommentar" id="kommentar" placeholder="Kommentar">
             <br>
             <p>Kommentar</p>
             <br>

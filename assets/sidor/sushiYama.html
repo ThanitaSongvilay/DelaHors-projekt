@@ -95,17 +95,16 @@
 
     <!--Form så att användare ska kunna kommentera-->
     <h2><b>Lämna gärna en kommentar här om vad du tycker om Il Forno Italiano!</b><h2>
-        <form name="kommentarForm" method="POST" action="../processphp/insert-basilico.php" onsubmit"return kollaKommentar()">
+        <form name="kommentarForm" method="POST" action="../processphp/insert-sushiYama.php" onsubmit"return kollaKommentar()">
             <br>
-            <input type="text" name="användarNamn" id="användarNamn">
+            <input type="text" name="användarNamn" id="användarNamn" placeholder="Användarnamn">
             <br>
             <p>Namn:</p>
             <br>
-            <input type="text" name="kommentar" id="kommentar">
+            <input type="text" name="kommentar" id="kommentar" placeholder="Kommentar">
             <br>
             <p>Kommentar</p>
             <br>
-
             <button id="skicka" type="submit" class="skicka">Skicka in</button>
             <br>
         </form>

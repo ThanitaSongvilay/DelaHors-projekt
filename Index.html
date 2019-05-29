@@ -72,7 +72,9 @@
     <!--</form>-->
 
     <div>
-        <form action="assets/sidor/search-process.php" >
+
+        <form id="ruta" name="sökForm" method="post" action = "assets/processphp/search-process.php" onsubmit="return (kollaSök())">
+
           <br>
           <input type="text" name="sökruta" id="sökruta">
           <br>
@@ -80,5 +82,10 @@
         </form>
       </div>
 
+      <div>
+        <?php
+          include 'search-process.php';
+        ?>
+      </div>
 </body>
 </html>

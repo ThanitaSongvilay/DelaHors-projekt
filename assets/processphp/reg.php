@@ -18,7 +18,7 @@ function Salt(){
     $randomSalt ="";
 
 	for($i=0; $i<$saltLength; $i++){
-		$randomSalt .= $all[mt_rand(0, strlen($all))];
+		$randomSalt .= $all[rand(0, strlen($all-1))];
 	}
 
 	return $randomSalt;
@@ -26,6 +26,7 @@ function Salt(){
 $uname="";
 $email="";
 $pword="";
+$Uvalue=0;
 $SHpword="";
 $randomSalt=Salt();
 
@@ -45,19 +46,21 @@ if(isset($_POST['regUpassword'])){
 	$res_u=mysqli_query($con,$sql_u);
 	$res_e=mysqli_query($con,$sql_e);
 	if(mysqli_num_rows($res_u)> 0){
-		echo" Följande namn $uname används redan!";
-		header("Refresh: 5; URL=reg.php");
+		$varning="Användar namnet är redan taget!";
+		echo("<script type ='text/javascript'> alert('$varning');</script>");
+		header("Refresh:0;  url=../../registrera.php");
 	}
 	else if(mysqli_num_rows($res_e) >0){
-		echo"Epost adressen används redan!";
-	}
+		$message = "Emailadressen är redan registrerad";
+        echo("<script type ='text/javascript'> alert('$message');</script>");
+        header("Refresh: 0; url=../../registrera.php"); 	}
 	else{
-		AddToDb($SHpword,$email,$uname,$randomSalt);
+		AddToDb($SHpword,$email,$uname,$randomSalt,$Uvalue);
 	}
 
-function AddToDb($pword,$email,$uname,$randomSalt){
+function AddToDb($pword,$email,$uname,$randomSalt,$Uvalue){
 
-    $host="dbtrain.im.uu.se";
+		$host="dbtrain.im.uu.se";
 		$dbusername="dbtrain_1044";
 		$password="gkpdxr";
 		$dbname="dbtrain_1044";
@@ -68,10 +71,10 @@ function AddToDb($pword,$email,$uname,$randomSalt){
 			die("Connection failed: " .$con.connect_error);
 		}
 
-	$sql = "INSERT INTO Users (Username,Email,Password,Salt) VALUES ('$uname','$email','$pword','$randomSalt')";
+	$sql = "INSERT INTO Users (Username,Email,Password,Salt,Value) VALUES ('$uname','$email','$pword','$randomSalt','$Uvalue')";
 
 	if($con->query($sql)=== TRUE){
-			echo "$sql"; /* ändra sen till sidan för inloggade*/
+			header("Location:../../index.php");
 		}
 		else{
 			 echo "ERROR $sql";

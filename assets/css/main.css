@@ -321,7 +321,7 @@ title{
   background-color: white;
 }
 
-#grid-container{
+.grid-container{
   grid-area: auto auto;
   grid-gap: 5px;
   border: 1px solid rgba(0, 0, 0, 0.8);

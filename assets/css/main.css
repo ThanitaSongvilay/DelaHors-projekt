@@ -1,7 +1,16 @@
 body{
   height: 100%;
-  background-color:#FFF5EE;
+  /*background-color:#FFF5EE;*/
   text-align: center;
+}
+
+body.fSidan
+{
+  background-image: url("../img/food2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 900px;
 }
 
 nav{
@@ -267,11 +276,13 @@ width: 250px;
   text-decoration: underline;
   font-size: 20px;
 }
+
 .PongIMG{
   width: 668px;
   height: 582px;
   margin-bottom: 70px;
 }
+
 title{
   text-align: center;
   margin: auto;
@@ -285,18 +296,20 @@ title{
 
 .omOss p
 {
-  font-size: 17px;
+  font-size: 18px;
+  color: white;
   margin: auto;
   font-family: 'Open Sans', monospace;
   margin-left: auto;
    margin-right: auto;
-   width: 20em
+   width: 20em;
 }
 .omOss{
   align: center;
   margin left: 40px;
-
-
+  color: white;
+  font-weight: bold;
+  font-size: 21px;
 }
 
 #ff{

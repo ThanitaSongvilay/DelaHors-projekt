@@ -4,13 +4,29 @@ body{
   text-align: center;
 }
 
+h1{
+  text-align: center;
+  font-family: 'Old Standard TT', serif;
+  font-size: 18px;
+  opacity: 0.7;
+}
+h2{
+  font-family: 'Old Standard TT', serif;
+  color: white;
+  opacity: 0.5;
+}
 nav{
   height: 120px;
   background-color: #77a8a8;
   margin: -17px;
-  /*border: none;
-  border-bottom: 3px solid #444;*/
+  border: none;
   width: 104%;
+}
+
+#Pongbody{
+  background-image: url("../img/PongMat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #kommentarsfallt
@@ -29,7 +45,7 @@ nav{
 
 #kommentarsfallt p
 {
-		text-align: left;
+	text-align: left;
 }
 
 #kommentar
@@ -46,19 +62,19 @@ nav{
 .dropDown{
   line-height: 25px;
 }
-nav h5{
+
+nav p{
   color: black;
-  font-family:'Open Sans', monospace;
+font-family: 'Old Standard TT', serif;
   font-size: 14px;
   text-align: right;
 }
 
-
-nav p{
+nav h{
   color: black;
   font-weight: bold;
   text-align: center;
-  font-family:'Open Sans', monospace;
+  font-family: 'Old Standard TT', serif;
   font-size: 28px;
   line-height: 40px;
   float: left;
@@ -69,28 +85,23 @@ nav p{
 {
   font-size: 12px;
   text-align: left;
-
 }
 
-
-h1{
+p{
   margin-left: auto;
-     margin-right: auto;
-     width: 8em;
- font-family:'Open Sans', monospace;
+  margin-right: auto;
+  width: 8em;
+  font-family: 'Old Standard TT', serif;
 }
-h2{
-  font-family:'Open Sans', monospace;
-  color: grey;
+
+ff,username,useremail,UserPassword,h4,a{
+  font-family: 'Old Standard TT', serif;
 }
-h3{
-  font-family:'Open Sans', monospace;
-  color: grey;
-}
+
 #sökruta
 {
-top: 50px;
-float: left;
+  top: 50px;
+  float: left;
   background: white;
   height: 50%;
   border-radius: 30px;
@@ -103,15 +114,14 @@ a{
   color: blue;
 }
 
-
 input[type=text]{
 
- color: #004D40;
- background-color: white;
- border-bottom: solid 2px #4DB6AC;
- outline: none;
- z-index: 20;
- padding: 10px 15px;
+  color: #004D40;
+  background-color: white;
+  border-bottom: solid 2px #4DB6AC;
+  outline: none;
+  z-index: 20;
+  padding: 10px 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
   border-style: hidden;
@@ -119,27 +129,26 @@ input[type=text]{
   margin-top: 0px;
   font-size: 12px;
   width: 150px;
-  font-family: 'Open Sans', monospace;
+  font-family: 'Old Standard TT', serif;
   box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
 
 input[type=password]{
 
- color: #004D40;
- background-color: white;
- border-bottom: solid 2px #4DB6AC;
- outline: none;
- z-index: 20;
- padding: 10px 15px;
+  color: #004D40;
+  background-color: white;
+  border-bottom: solid 2px #4DB6AC;
+  outline: none;
+  z-index: 20;
+  padding: 10px 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
   border-style: hidden;
   box-sizing: none;
   margin-top: 0px;
   font-size: 12px;
-  font-family: 'Open Sans', monospace;
+  font-family: 'Old Standard TT', serif;
   width: 150px;box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
-
 }
 
 button{
@@ -151,12 +160,10 @@ text-align: center;
 text-decoration: none;
 display: inline-block;
 font-size: 16px;
-font-family: 'Open Sans', monospace;
+font-family: 'Old Standard TT', serif;
 border-radius: 4px;
 box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
-
-
 
 nav .logInContainer button{
   padding: 6px;
@@ -173,7 +180,7 @@ nav ul li a{
   display: block;
   color: black;
   text-align: left;
-  font-family:'Open Sans', monospace;
+  font-family: 'Old Standard TT', serif;
   font-size: 14px;
   padding: 47px 12px;
   text-decoration: none;
@@ -195,7 +202,6 @@ nav ul li ul{
 
 nav ul li:hover ul{
   display: block;
-
 }
 
 nav ul li ul a{
@@ -236,7 +242,7 @@ background-color: white;
 
 #pongBild{
 float: left;
-width: 250px;
+width: 270px;
 }
 
 #sushiYamaBild
@@ -268,9 +274,9 @@ width: 250px;
   font-size: 20px;
 }
 .PongIMG{
-  width: 668px;
-  height: 582px;
-  margin-bottom: 70px;
+
+  width: 100%;
+  height: 700px;
 }
 title{
   text-align: center;
@@ -278,25 +284,23 @@ title{
 }
 
 #map{
-      height: 350px;
-      width: 30%;
-      margin: auto;
+  height: 350px;
+  width: 30%;
+  margin: auto;
 }
 
 .omOss p
 {
   font-size: 17px;
   margin: auto;
-  font-family: 'Open Sans', monospace;
+  font-family: 'Old Standard TT', serif;
   margin-left: auto;
-   margin-right: auto;
-   width: 20em
+  margin-right: auto;
+  width: 20em
 }
 .omOss{
   align: center;
   margin left: 40px;
-
-
 }
 
 #ff{
@@ -308,18 +312,14 @@ title{
 #regUemail{
  border: none;
  background-color: white;
- border-bottom: 3px solid #444;
-
 }
 
 #regUpassword{
   border: none;
   background-color: white;
-  border-bottom: 3px solid #444;
 }
 
 #regUname{
   border: none;
   background-color: white;
-  border-bottom: 3px solid #444;
 }

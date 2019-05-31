@@ -12,6 +12,7 @@
 
 		$sql= "DELETE FROM Kommentarer WHERE KomId=$_GET[KomId]";
 		if(mysqli_query($con,$sql)){
+			echo"Kommentaren är nu borttagen!";
 			header('Location:'.$_SERVER["HTTP_REFERER"]); /*hoppar till sidan innan!*/
 			exit;
 		}else{

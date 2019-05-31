@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+	session_start();
+	if(isset($_SESSION['loggedIn']) && ($_SESSION['loggedIn']==true)){
+	}
+	else{
+		$_SESSION['Value']=Null;
+
+	}
+ ?>
 <hmtl>
     <head>
         <title>Il Forno Italiano</title>
@@ -21,6 +30,7 @@
           <li><a href="asiatiskt.html">Asiatiskt</a>
           </ul>
         </div>
+      </nav>
         <br><br><br><br><br><br><br>
 
         <div>

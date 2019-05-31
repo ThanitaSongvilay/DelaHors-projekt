@@ -322,7 +322,7 @@ title{
 }
 
 .grid-container{
-  grid-area: auto auto;
+  grid-template-columns: auto auto auto auto;
   padding:15px;
 }
 

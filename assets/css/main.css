@@ -92,10 +92,16 @@ nav h{
   text-align: left;
 }
 
+.grid-item a{ /*det här är för restauranglänkarna*/
+  color: black;
+  font-size: 18px;
+  text-decoration: none; /*no underline*/
+}
+
 p{
   margin-left: auto;
   margin-right: auto;
-  width: 8em;
+  /*width: 8em;*/
   font-family: 'Old Standard TT', serif;
 }
 

@@ -6,10 +6,8 @@ body{
 
 body.fSidan
 {
-  background-image: url("../img/food4.jpg");
+  background-image: url("../img/food5.jpeg");
   background-repeat: no-repeat;
-  background-position: right;
-  height: auto;
   background-size: cover;
   height: 680px;
 }

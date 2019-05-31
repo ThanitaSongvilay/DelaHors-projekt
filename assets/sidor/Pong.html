@@ -15,7 +15,6 @@
       margin: auto;
     }
   </style>
-
     </head>
     <body id="Pongbody">
       <nav>
@@ -31,19 +30,7 @@
           <li><a href="asiatiskt.html">Asiatiskt</a>
           </ul>
         </div>
-        <!--<div id= "logInContainer">
-          <form id="form" name="form" method="POST" action="assets/processphp/logIn.html"onsubmit= "return (kolla())">
-            <div>
-              <input type="text" placeholder="Användarnamn" name="Namn" id="Namn"/>
-            </div>
-            <div>
-              <input type="password" placeholder="Lösenord" name="password" id="Losen"/>
-            </div>
-            <div id="Knapp">
-              <button type="submit">Logga in</button>
-              <h5> Jag vill skapa ett konto! <br> <a href="../../registrera.html"> Registrera dig här</a></h5>
-            </div>
-          </form>-->
+
           <br><br><br><br><br>
           <br><br><br><br><br>
 
@@ -56,11 +43,16 @@
         <div id="img">
           <!--<img src="../img/PongMat.jpg" class="PongIMG">-->
         </div>
+
+        <h3><i>Pong</i></h3>
+
+
         <div>
           <p>Lokaliserad vid Uppsala Centralstation.<br>
             Nedan hittar ni Pongs olika menyer och kontaktuppgifter.
           </p>
         </div>
+
         <div class="restLänk">
           <a href="https://ponguppsala.se/brunch-3/" target="_blank">Brunchmeny</a><br>
           <br>
@@ -104,12 +96,15 @@
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrRyzQ557WJLJOFj6qpceKnANh4Szwcjw&callback=initMap">
   </script>
 
+
 <div>
     <?php
     include	'../processphp/pong-process.php';
   ?>
 
-        <h1><b>Lämna gärna en kommentar här om vad du tycker om Pong!</b><h1>
+  </div>
+        <h2><b>Lämna gärna en kommentar här om vad du tycker om Pong!</b><h2>
+
           <br>
             <form class="kommentarForm" name="kommentarForm" method="post" action="../processphp/insert-basilico.php" onsubmit="return kollaKommentar()">
             Användarnamn: <br/>

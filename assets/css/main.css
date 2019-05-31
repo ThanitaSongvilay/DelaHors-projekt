@@ -1,6 +1,6 @@
 body{
   height: 100%;
-  background-color:#FFF5EE;
+  /*background-color:#FFF5EE;*/
   text-align: center;
 }
 
@@ -15,6 +15,16 @@ h2{
   color: white;
   opacity: 0.5;
 }
+body.fSidan
+{
+  background-image: url("../img/food2.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+
 nav{
   height: 120px;
   background-color: #77a8a8;
@@ -40,7 +50,7 @@ nav{
 	margin: 0 auto;
 	background-color: #FFFFFF;
 	overflow: auto;
-	border-radius: 20px; //rundade kanter
+	border-radius: 20px; /*rundade kanter*/
 }
 
 #kommentarsfallt p
@@ -221,7 +231,7 @@ nav ul li ul li{
 
 #form{
   display: grid;
-  grid-template-areas: "a a a";
+  grid-template-areas: "a a a ";
   grid-auto-columns: 3fr;
   grid-gap: 0%;
 }
@@ -273,11 +283,13 @@ width: 270px;
   text-decoration: underline;
   font-size: 20px;
 }
+
 .PongIMG{
 
   width: 100%;
   height: 700px;
 }
+
 title{
   text-align: center;
   margin: auto;
@@ -291,16 +303,26 @@ title{
 
 .omOss p
 {
-  font-size: 17px;
+  font-size: 18px;
+  color: white;
   margin: auto;
   font-family: 'Old Standard TT', serif;
   margin-left: auto;
   margin-right: auto;
   width: 20em
+
+   margin-right: auto;
+   width: 20em;
+
 }
 .omOss{
   align: center;
   margin left: 40px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 21px;
+
 }
 
 #ff{
@@ -322,4 +344,17 @@ title{
 #regUname{
   border: none;
   background-color: white;
+
+}
+
+.grid-container{
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  padding:15px;
+}
+
+.grid-item{
+  grid-gap: 5px;
+  padding: 15px;
+
 }

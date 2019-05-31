@@ -1,6 +1,7 @@
 body{
   height: 100%;
   text-align: center;
+  background-color: #FFFAFA;
 }
 
 h1{
@@ -51,6 +52,7 @@ nav{
 #kommentarsfallt p
 {
 	text-align: left;
+  color: #F5F5F5;
 }
 
 #kommentar

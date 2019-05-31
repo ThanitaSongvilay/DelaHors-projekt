@@ -322,6 +322,11 @@ title{
 }
 
 .grid-container{
+  display: block;
+  padding:15px;
+}
+
+.grid-item{
   grid-area: auto auto;
   grid-gap: 5px;
   border: 1px solid rgba(0, 0, 0, 0.8);

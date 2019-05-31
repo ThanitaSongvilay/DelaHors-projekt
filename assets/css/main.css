@@ -40,6 +40,7 @@ nav{
   padding-bottom: 80px;
   resize: none; /*För att ta bort den grejen så användaren kan expandera rutan själv*/
   border-radius: 12px; /*rundade kanter*/
+  border-color: grey;/* grå så att det inte ser så skarpt ut*/
 }
 
 .dropDown{
@@ -78,7 +79,14 @@ h1{
      width: 8em;
  font-family:'Open Sans', monospace;
 }
-
+h2{
+  font-family:'Open Sans', monospace;
+  color: grey;
+}
+h3{
+  font-family:'Open Sans', monospace;
+  color: grey;
+}
 #sökruta
 {
 top: 50px;

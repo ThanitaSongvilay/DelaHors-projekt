@@ -33,7 +33,7 @@ nav{
 	margin: 0 auto;
 	background-color: #FFFFFF;
 	overflow: auto;
-	border-radius: 20px; //rundade kanter
+	border-radius: 20px; /*rundade kanter*/
 }
 
 #kommentarsfallt p
@@ -224,7 +224,7 @@ nav ul li ul li{
 
 #form{
   display: grid;
-  grid-template-areas: "a a a";
+  grid-template-areas: "a a a ";
   grid-auto-columns: 3fr;
   grid-gap: 0%;
 }
@@ -321,18 +321,26 @@ title{
 #regUemail{
  border: none;
  background-color: white;
- border-bottom: 3px solid #444;
 
 }
 
 #regUpassword{
   border: none;
   background-color: white;
-  border-bottom: 3px solid #444;
 }
 
 #regUname{
   border: none;
   background-color: white;
-  border-bottom: 3px solid #444;
+}
+
+.grid-container{
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  padding:15px;
+}
+
+.grid-item{
+  grid-gap: 5px;
+  padding: 15px;
 }

@@ -10,7 +10,7 @@
 		die("Connection failed: " .$con.connect_error);
 	}
 
-	$sql="SELECT Kommentar,Namn FROM Kommentarer WHERE RestId = 1 ";
+	$sql="SELECT Kommentar,Namn,KomId FROM Kommentarer WHERE RestId = 1 ";
 	$save=$con->query($sql);
 		while($row=$save->fetch_assoc()){
 		echo'<div class="kommentarer">';

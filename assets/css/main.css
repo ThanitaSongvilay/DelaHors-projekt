@@ -24,7 +24,7 @@ nav{
 	margin: 0 auto;
 	background-color: #FFFFFF;
 	overflow: auto;
-	border-radius: 20px; //rundade kanter
+	border-radius: 20px; /*rundade kanter*/
 }
 
 #kommentarsfallt p
@@ -293,8 +293,8 @@ title{
    width: 20em
 }
 .omOss{
-  align: center;
-  margin left: 40px;
+  text-align: center;
+  margin: left 40px;
 
 
 }

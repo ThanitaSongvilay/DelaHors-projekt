@@ -3,13 +3,13 @@
   <head>
     <title>Basilico</title> <!--det här syns i webbläsartabben-->
     <link rel="stylesheet" href="../css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../js/index.js"></script> <!-- koppla till js-->
     <meta charset="UTF-8">
   </head>
   <body>
     <nav>
-      <p>RestauRank </p>
+      <h>RestauRank </h>
       <div class="dropDown">
         <ul>
         <li><a href="../../Index.html">Hem</a>
@@ -21,40 +21,31 @@
         <li><a href="asiatiskt.html">Asiatiskt</a>
         </ul>
       </div>
-      <br><br><br><br><br><br><br>
-      <!--<div id= "logInContainer">
-        <form id="form" name="form" method="POST" action="assets/processphp/logIn.html"onsubmit= "return (kolla())">
-          <div>
-            <input type="text" placeholder="Användarnamn" name="Namn" id="Namn"/>
-          </div>
-          <div>
-            <input type="password" placeholder="Lösenord" name="password" id="Losen"/>
-          </div>
-          <div id="Knapp">
-            <button type="submit">Logga in</button>
-            <h5> Jag vill skapa ett konto! <br> <a href="../../registrera.html"> Registrera dig här</a></h5>
-          </div>
-        </form>-->
+    </nav>
+      <br><br>
+      <br><br>
+      <br><br>
+
         <div>
           <h1>Basilico</h1>
         </div>
-        
-        <div>
-          <h3><i>Lokaliserad vid Linnéträdgården.<br>
-            Nedan hittar ni deras meny och kontaktuppgifter till restaurangen.
-          </i></h3>
-        </div>
+        <br>
 
         <div id="img">
           <img src="../img/basilico.jpg">
         </div>
         <br>
+        <div>
+          <p>Lokaliserad vid Linnéträdgården.<br>
+            Nedan hittar ni deras meny och kontaktuppgifter till restaurangen.
+          </p>
+        </div>
         <div class="restLänk">
           <a href="http://www.basilico.se/meny.html">Meny</a><br>
           <a href="http://www.basilico.se/kontakt.html">Kontakt</a>
         </div>
         <div>
-          <h4><i>Hitta hit!</i></h4>
+          <p>Hitta hit!</p>
         </div>
 
         <!--Kartan-->
@@ -89,8 +80,19 @@
     async defer></script>
     <br>
 
+
+    <?php
+      //include 'basilico-process.php';
+      ?>
+
+    <!--<div>
+      <?php
+		    //include	'../processphp/basilico-process.php';
+	  ?>
+  </div>-->
+
     <!--Form så att användare ska kunna kommentera-->
-    <h2><b>Lämna gärna en kommentar här om vad du tycker om Basilico!</b><h2>
+    <p><b>Lämna gärna en kommentar här om vad du tycker om Basilico!</b></p>
       <br>
         <form class="kommentarForm" name="kommentarForm" method="post" action="../processphp/insert-basilico.php" onsubmit="return kollaKommentar()">
         Användarnamn: <br/>
@@ -104,7 +106,7 @@
         <button id="skicka" type="submit">Skicka in</button>
         <br>
         <br>
-        <h3> Kommentarsfällt: </h3>
+        <p> Kommentarsfällt: </p>
         <div name="kommentarsfallt" id="kommentarsfallt">
           <p>
             <?php

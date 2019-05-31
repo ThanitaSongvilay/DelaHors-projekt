@@ -16,12 +16,10 @@ h2{
 }
 body.fSidan
 {
-  background-image: url("../img/food4.jpg");
+  background-image: url("../img/food7.jpg");
   background-repeat: no-repeat;
-  background-position: right;
-  height: auto;
   background-size: cover;
-  height: 680px;
+
 }
 
 
@@ -304,7 +302,7 @@ title{
 .omOss p
 {
   font-size: 18px;
-  color: black;
+  color: white;
   margin: auto;
   font-family: 'Old Standard TT', serif;
   margin-left: auto;
@@ -317,11 +315,8 @@ title{
 }
 .omOss{
   align: center;
-  margin left: 40px;
-
+  margin left: 40px
   color: white;
-
-
   font-weight: bold;
   font-size: 21px;
 

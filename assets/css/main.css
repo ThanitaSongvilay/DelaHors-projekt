@@ -322,6 +322,7 @@ title{
 }
 
 .grid-container{
+  display: inline-grid;
   grid-template-columns: auto auto auto auto;
   padding:15px;
 }

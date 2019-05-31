@@ -6,11 +6,11 @@ body{
 
 body.fSidan
 {
-  background-image: url("../img/food2.jpg");
+  background-image: url("../img/food2.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 900px;
+
 }
 
 nav{

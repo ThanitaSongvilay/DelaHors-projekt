@@ -29,6 +29,7 @@ nav{
   margin: -17px;
   border: none;
   width: 104%;
+background-color: rgba(255,255,255,0.5);
 }
 
 #Pongbody{
@@ -36,6 +37,11 @@ nav{
   background-image: url("../img/PongMat.jpg");
   background-repeat: no-repeat;
 
+}
+#BasilicoBody{
+width: 100%;
+  background-image: url("../img/Meatballs.jpg");
+  background-repeat: no-repeat;
 }
 
 #kommentarsfallt
@@ -201,6 +207,7 @@ nav ul li a{
   padding: 30px 15px;
   text-decoration: none;
   font-size: 16px;
+
 }
 
 nav ul li{
@@ -212,8 +219,8 @@ nav ul li{
 nav ul li ul{
   display: none;
   position: absolute; /* till the drop down nav bar så blir subtitlarna nedåt*/
-  background-color: #77a8a8;
   padding: 10px;
+
 }
 
 nav ul li:hover ul{

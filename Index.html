@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+  <html>
   <head>
-    <meta charset= "utf-8">
-    <title> Hem | Restaurank </title> <!--det här syns i webbläsartabben-->
-    <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset= "utf-8">
+  <title> Hem | Restaurank </title>
+  <link rel="stylesheet" href="assets/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="assets/js/index.js"></script> <!-- koppla till js-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="assets/js/index.js"></script>
+
+
   </head>
 <body class="fSidan">
-
     <nav>
-        <div class="dropDown">
+      <div class="dropDown">
         <h>RestauRank </h>
         <ul>
         <li><a href="index.html">Hem</a>
@@ -23,7 +26,7 @@
         </ul>
       </div><br>
       <div class= "logInContainer">
-        <form id="form" name="form" method="POST" action="assets/processphp/logIn.php"onsubmit= "return (kolla())">
+        <form id="form" name="form" method="POST" action="assets/processphp/logIn.php"onsubmit= "return (kolla())" >
           <div>
             <input type="text" placeholder="Användarnamn" name="Namn" id="Namn"/>
           </div>
@@ -33,7 +36,9 @@
           <div id="Knapp">
             <button type="submit">Logga in</button>
             </div>
-            <h5> Jag vill skapa ett konto! <br> <a href="registrera.html"> Registrera dig här</a></h5>
+            <h5> Jag vill skapa ett konto! <br>
+              <input class="skapaKnapp" onclick="window.location.href='registrera.html'" type="button" value="Skapa Konto"/>
+            <!--<a href="registrera.html"> Registrera dig här</a></h5>-->
         </form>
       </div>
       </nav>

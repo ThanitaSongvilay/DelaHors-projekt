@@ -16,7 +16,7 @@
         <script type="text/javascript" src="../js/index.js"></script> <!-- koppla till js-->
         <meta charset="UTF-8">
     </head>
-    <body>
+    <body id="IlfornoBody">
       <nav>
         <h>RestauRank </h>
         <div class="dropDown">
@@ -31,21 +31,15 @@
           </ul>
         </div>
       </nav>
-        <br><br><br><br><br><br><br>
+        <div>
+            <h2>Välkommen till Il forno Italiano</h2>
+        </div>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br>
 
         <div>
-            <h1>Il Forno Italiano</h1>
-        </div>
-
-        <br>
-        <!--En kort beskrivande text-->
-        <div>
-            <h3><i>På Il Forno Italiano kan du hitta italienska rätter som bland annat vedugnsgräddade pizzor, färsk pasta och antipasti. Utöver detta har restaurangen även ett sortiment av vin.</i></h3>
-        </div>
-
-        <!--Bild på restaurangen-->
-        <div id="img">
-            <img src="../img/ilforno.jpg">
+            <p>På Il Forno Italiano kan du hitta italienska rätter som bland annat vedugnsgräddade pizzor, färsk pasta och antipasti. Utöver detta har restaurangen även ett sortiment av vin.</p>
         </div>
 
         <br>
@@ -86,7 +80,7 @@
         </script>
 
         <!--Form så att användare ska kunna kommentera-->
-        <h2><b>Lämna gärna en kommentar här om vad du tycker om Il Forno Italiano!</b><h2>
+        <p>Lämna gärna en kommentar här om vad du tycker om Il Forno Italiano!<p>
           <br>
             <form class="kommentarForm" name="kommentarForm" method="post" action="../processphp/insert-Ilforno.php" onsubmit="return kollaKommentar()">
             Användarnamn: <br/>
@@ -100,7 +94,7 @@
             <button id="skicka" type="submit">Skicka in</button>
             <br>
             <br>
-            <h3> Kommentarsfällt: </h3>
+            <p> Kommentarsfällt: </p>
             <div name="kommentarsfallt" id="kommentarsfallt">
               <p>
                 <?php

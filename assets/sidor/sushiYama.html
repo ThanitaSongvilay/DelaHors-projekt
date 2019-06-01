@@ -7,7 +7,8 @@
     <script type="text/javascript" src="../js/index.js"></script> <!-- koppla till js-->
     <meta charset="UTF-8">
   </head>
-  <body>
+
+  <body id="SushiYamaBod">
     <nav>
       <h>RestauRank </h>
       <div class="dropDown">
@@ -22,21 +23,21 @@
         </ul>
       </div>
       </nav>
-      <br><br><br><br><br><br><br>
-        <div>
-          <h1>Sushi Yama</h1>
+      <br>
+          <h2>Välkommen till Sushi Yama</h2>
         </div>
 
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
         <div>
-          <h3><i>Sushi Yama är lokaliserad vid Uppsala Centralstation och erbjuder ett sortiment av sushi att avnjuta.<br>
+          <p>Sushi Yama är lokaliserad vid Uppsala Centralstation och erbjuder ett sortiment av sushi att avnjuta.<br>
             Nedan hittar ni deras meny och kontaktuppgifter till restaurangen.
-          </i></h3>
+          </p>
         </div>
-        
-        <div id="img">
-          <img src="../img/sushi.jpg">
-        </div>
-        <br>
+
+
 
         <div class="restLänk">
           <a href="https://indd.adobe.com/view/4a8c46dd-f902-4063-a0b9-cc00dd8e78bd" target="_blank">Meny</a><br>
@@ -45,7 +46,7 @@
           <br>
         </div>
         <div>
-          <h4><i>Hitta hit!</i></h4>
+          <p>Hitta hit!</p>
         </div>
 
         <!--Kartan-->
@@ -79,7 +80,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrRyzQ557WJLJOFj6qpceKnANh4Szwcjw&callback=initMap"
     async defer></script>
     <!--Form så att användare ska kunna kommentera-->
-    <h2><b>Lämna gärna en kommentar här om vad du tycker om Sushi Yama!</b><h2>
+    <p><b>Lämna gärna en kommentar här om vad du tycker om Sushi Yama!</b><p>
       <br>
         <form class="kommentarForm" name="kommentarForm" method="post" action="../processphp/insert-basilico.php" onsubmit="return kollaKommentar()">
         Användarnamn: <br/>
@@ -93,7 +94,7 @@
         <button id="skicka" type="submit">Skicka in</button>
         <br>
         <br>
-        <h3> Kommentarsfällt: </h3>
+        <p> Kommentarsfällt: </p>
         <div name="kommentarsfallt" id="kommentarsfallt">
           <p>
             <?php

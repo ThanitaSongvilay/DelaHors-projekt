@@ -23,6 +23,16 @@ body.fSidan
   background-size: cover;
 }
 
+body.iSidan
+{
+  background-color: #F5F5F5;
+}
+
+body .aSidan
+{
+  background-color: #F5F5F5;
+}
+
 nav{
   height: 120px;
   background-color: #77a8a8;

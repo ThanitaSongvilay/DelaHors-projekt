@@ -25,7 +25,8 @@ body.fSidan
 
 body.iSidan
 {
-  background-color: #F5F5F5;
+  /*background-color: #F5F5F5;*/
+  background-image: url("../img/marmor.jpg");
 }
 
 body .aSidan

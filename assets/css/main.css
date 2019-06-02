@@ -13,7 +13,7 @@ h1{
 h2{
   font-family: 'Old Standard TT', serif;
   color: white;
-
+  font-size: 35px;
   text-align: center;
 }
 body.fSidan
@@ -29,7 +29,7 @@ body.iSidan
   background-image: url("../img/marmor.jpg");
 }
 
-body .aSidan
+body.aSidan
 {
   /*background-color: #F5F5F5;*/
   background-image: url("../img/marmor.jpg");
@@ -41,7 +41,7 @@ nav{
   margin: -17px;
   border: none;
   width: 104%;
-background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.5);
 }
 
 #Pongbody{
@@ -229,11 +229,9 @@ nav ul li a{
   color: black;
   text-align: left;
   font-family: 'Old Standard TT', serif;
-  font-size: 14px;
-  padding: 30px 15px;
+  padding: 39px 15px;
   text-decoration: none;
-  font-size: 16px;
-
+  font-size: 17px;
 }
 
 nav ul li{
@@ -245,7 +243,7 @@ nav ul li{
 nav ul li ul{
   display: none;
   position: absolute; /* till the drop down nav bar så blir subtitlarna nedåt*/
-  padding: 10px;
+  margin: -30px; /*så dropdown hamnar precis under*/
 
 }
 
@@ -255,17 +253,20 @@ nav ul li:hover ul{
 
 nav ul li ul a{
 padding: 8px 14px;
+font-size: 17px;
 }
 
 nav ul li ul a:hover{
 
     padding: 8px 14px;
-    background-color: #f3f3;
+    /*background-color: #f3f3;*/
+    background-color: grey;
 }
 
 nav ul li ul li{
       width: 180px;
-      border-radius: 4px;
+      /*border-radius: 4px;*/
+      background-color: rgba(255,255,255,0.5); /*transparent på drop down*/
 }
 
 #form{

@@ -31,7 +31,8 @@ body.iSidan
 
 body .aSidan
 {
-  background-color: #F5F5F5;
+  /*background-color: #F5F5F5;*/
+  background-image: url("../img/marmor.jpg");
 }
 
 nav{
@@ -119,7 +120,7 @@ nav h{
   font-size: 28px;
   line-height: 40px;
   float: left;
-  padding: 7px 20px;
+  padding: 30px 20px;
 }
 
 .admin p

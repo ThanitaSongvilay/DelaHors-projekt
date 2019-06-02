@@ -293,6 +293,9 @@ background-color: white;
   grid-gap: 3px 3px;
 
 }
+.skapaKnapp{
+  color: grey;
+}
 
 #pongBild{
 float: left;

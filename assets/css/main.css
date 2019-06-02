@@ -35,14 +35,14 @@ background-size: cover;
 
 body.iSidan
 {
-/*background-color: #F5F5F5;*/
-background-image: url("../img/marmor.jpg");
+background-color: #FAF0E6;
+/*background-image: url("../img/marmor.jpg");*/
 }
 
 body.aSidan
 {
-/*background-color: #F5F5F5;*/
-background-image: url("../img/marmor.jpg");
+background-color: #FAF0E6;
+/*background-image: url("../img/marmor.jpg");*/
 }
 
 nav{

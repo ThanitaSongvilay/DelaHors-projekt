@@ -1,212 +1,218 @@
 body{
-  height: 100%;
-  text-align: center;
-  background-color: #FFFAFA;
+height: 100%;
+text-align: center;
+background-color: #FFFAFA;
 }
 
 h1{
-  text-align: center;
-  font-family: 'Old Standard TT', serif;
-  font-size: 18px;
+text-align: center;
+font-family: 'Old Standard TT', serif;
+font-size: 18px;
 
 }
 h2{
-  font-family: 'Old Standard TT', serif;
-  color: white;
-  font-size: 35px;
-  text-align: center;
+font-family: 'Old Standard TT', serif;
+color: white;
+font-size: 35px;
+text-align: center;
 }
 
 body.reg
 {
-  /*background-color: #F5F5F5;*/
-  background-image: url("../img/marmor.jpg");
-  /*background-image: url("../img/wood.jpeg");*/
-  background-repeat: no-repeat;
-  background-size: cover;
+/*background-color: #F5F5F5;*/
+background-image: url("../img/marmor.jpg");
+/*background-image: url("../img/wood.jpeg");*/
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 body.fSidan
 {
-  background-image: url("../img/food.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+background-image: url("../img/food.jpg");
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 body.iSidan
 {
-  /*background-color: #F5F5F5;*/
-  background-image: url("../img/marmor.jpg");
+/*background-color: #F5F5F5;*/
+background-image: url("../img/marmor.jpg");
 }
 
 body.aSidan
 {
-  /*background-color: #F5F5F5;*/
-  background-image: url("../img/marmor.jpg");
+/*background-color: #F5F5F5;*/
+background-image: url("../img/marmor.jpg");
 }
 
 nav{
-  height: 120px;
-  background-color: #77a8a8;
-  margin: -17px;
-  border: none;
-  width: 104%;
-  background-color: rgba(255,255,255,0.5);
+height: 120px;
+background-color: #77a8a8;
+margin: -17px;
+border: none;
+width: 104%;
+background-color: rgba(255,255,255,0.5);
 }
 
 #Pongbody{
-  width: 100%;
-  background-image: url("../img/PongMat.jpg");
-  background-repeat: no-repeat;
+background-size: 100% 30%;
+background-image: url("../img/PongMat.jpg");
+background-repeat: no-repeat;
 
 }
 #SushiYamaBod{
-  width: 100%;
-  background-image: url("../img/yamayama.jpg");
-  background-repeat: no-repeat;
+background-size: 100% 30%;
+background-image: url("../img/yamayama.jpg");
+background-repeat: no-repeat;
 }
 
 #BasilicoBody{
-  width: 100%;
-  background-image: url("../img/PASTA.jpg");
-  background-repeat: no-repeat;
+background-image: url("../img/PASTA.jpg");
+background-repeat: no-repeat;
+background-size: 100% 30%;
 }
 #IlfornoBody{
-  width:100%;
-  background-image: url("../img/mozarella.jpg");
-
-  background-repeat: no-repeat;
+background-size: 100% 30%;
+background-image: url("../img/risotto.jpg");
+background-repeat: no-repeat;
+max-height: 50%;
 
 }
-
-
 #kommentarsfallt
 {
-	width: 30%;
-	height: 550px;
-	padding-top: 1px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	padding-left: 20px;
-	margin: 0 auto;
-	background-color: #FFFFFF;
-	overflow: auto;
-	border-radius: 20px; /*rundade kanter*/
+width: 30%;
+height: 550px;
+padding-top: 1px;
+padding-right: 20px;
+padding-bottom: 20px;
+padding-left: 20px;
+margin: 0 auto;
+background-color: #FFFFFF;
+overflow: auto;
+border-radius: 20px; /*rundade kanter*/
 }
 
 #kommentarsfallt p
 {
-	text-align: left;
-  color: #F5F5F5;
+text-align: left;
+color: #F5F5F5;
+
+}
+#kommentarsfallt{
+box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
 
 #kommentar
 {
-  width: 20%;
-  padding: 8px; /*mellanrummet mellan det man skriver och kanten till höger*/
-  padding-top: 8px; /*padding uppe - där man börjar skriva texten från*/
-  padding-bottom: 80px;
-  resize: none; /*För att ta bort den grejen så användaren kan expandera rutan själv*/
-  border-radius: 12px; /*rundade kanter*/
-  border-color: grey;/* grå så att det inte ser så skarpt ut*/
+width: 20%;
+padding: 8px; /*mellanrummet mellan det man skriver och kanten till höger*/
+padding-top: 8px; /*padding uppe - där man börjar skriva texten från*/
+padding-bottom: 80px;
+resize: none; /*För att ta bort den grejen så användaren kan expandera rutan själv*/
+border-radius: 12px; /*rundade kanter*/
+box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
+
+}
+textarea{
+border: none;
+box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
 
 .dropDown{
-  line-height: 25px;
+line-height: 25px;
 }
 
 nav p{
-  color: black;
+color: black;
 font-family: 'Old Standard TT', serif;
-  font-size: 14px;
-  text-align: right;
+font-size: 14px;
+text-align: right;
 }
 
 nav h{
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  font-family: 'Old Standard TT', serif;
-  font-size: 28px;
-  line-height: 40px;
-  float: left;
-  padding: 30px 20px;
+color: black;
+font-weight: bold;
+text-align: center;
+font-family: 'Old Standard TT', serif;
+font-size: 28px;
+line-height: 40px;
+float: left;
+padding: 30px 20px;
 }
 
 .admin p
 {
-  font-size: 12px;
-  text-align: left;
+font-size: 12px;
+text-align: left;
 }
 
 .grid-item a{ /*det här är för restauranglänkarna*/
-  color: black;
-  font-size: 18px;
-  text-decoration: none; /*no underline*/
+color: black;
+font-size: 18px;
+text-decoration: none; /*no underline*/
 }
 
 p{
-  margin-left: auto;
-  margin-right: auto;
-  /*width: 8em;*/
-  font-family: 'Old Standard TT', serif;
+margin-left: auto;
+margin-right: auto;
+/*width: 8em;*/
+font-family: 'Old Standard TT', serif;
 }
 
 ff,username,useremail,UserPassword,h4,a{
-  font-family: 'Old Standard TT', serif;
+font-family: 'Old Standard TT', serif;
 }
 
 #sökruta
 {
-  top: 50px;
-  float: left;
-  background: white;
-  height: 50%;
-  border-radius: 30px;
-  padding: 10px;
-  margin-bottom: 90%;
-  box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
+top: 50px;
+float: left;
+background: white;
+height: 50%;
+border-radius: 30px;
+padding: 10px;
+box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
 
 a{
-  color: blue;
+color: blue;
 }
 
 input[type=text]{
 
-  color: #004D40;
-  background-color: white;
-  border-bottom: solid 2px #4DB6AC;
-  outline: none;
-  z-index: 20;
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  border-style: hidden;
-  box-sizing: none;
-  margin-top: 0px;
-  font-size: 12px;
-  width: 150px;
-  font-family: 'Old Standard TT', serif;
-  box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
+color: #004D40;
+background-color: white;
+border-bottom: solid 2px #4DB6AC;
+outline: none;
+z-index: 20;
+padding: 10px 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+border-style: hidden;
+box-sizing: none;
+margin-top: 0px;
+font-size: 12px;
+width: 150px;
+font-family: 'Old Standard TT', serif;
+box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
 
 input[type=password]{
 
-  color: #004D40;
-  background-color: white;
-  border-bottom: solid 2px #4DB6AC;
-  outline: none;
-  z-index: 20;
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  border-style: hidden;
-  box-sizing: none;
-  margin-top: 0px;
-  font-size: 12px;
-  font-family: 'Old Standard TT', serif;
-  width: 150px;box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
+color: #004D40;
+background-color: white;
+border-bottom: solid 2px #4DB6AC;
+outline: none;
+z-index: 20;
+padding: 10px 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+border-style: hidden;
+box-sizing: none;
+margin-top: 0px;
+font-size: 12px;
+font-family: 'Old Standard TT', serif;
+width: 150px;box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
 
 button{
@@ -224,41 +230,41 @@ box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
 
 nav .logInContainer button{
-  padding: 6px;
-  font-size: 12px;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
+padding: 6px;
+font-size: 12px;
+border: none;
+cursor: pointer;
+box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
 button:hover{
-  color: #77a8a8;
+color: #77a8a8;
 }
 
 nav ul li a{
-  display: block;
-  color: black;
-  text-align: left;
-  font-family: 'Old Standard TT', serif;
-  padding: 39px 15px;
-  text-decoration: none;
-  font-size: 17px;
+display: block;
+color: black;
+text-align: left;
+font-family: 'Old Standard TT', serif;
+padding: 39px 15px;
+text-decoration: none;
+font-size: 17px;
 }
 
 nav ul li{
-  float:left;
-  list-style: none; /*for no bullet points!*/
-  position: relative; /* need this to make position absolute!*/
+float:left;
+list-style: none; /*for no bullet points!*/
+position: relative; /* need this to make position absolute!*/
 }
 
 nav ul li ul{
-  display: none;
-  position: absolute; /* till the drop down nav bar så blir subtitlarna nedåt*/
-  margin: -30px; /*så dropdown hamnar precis under*/
+display: none;
+position: absolute; /* till the drop down nav bar så blir subtitlarna nedåt*/
+margin: -30px; /*så dropdown hamnar precis under*/
 
 }
 
 nav ul li:hover ul{
-  display: block;
+display: block;
 }
 
 nav ul li ul a{
@@ -268,48 +274,55 @@ font-size: 17px;
 
 nav ul li ul a:hover{
 
-    padding: 8px 14px;
-    /*background-color: #f3f3;*/
-    background-color: grey;
+padding: 8px 14px;
+/*background-color: #f3f3;*/
+background-color: grey;
 }
 
 nav ul li ul li{
-      width: 180px;
-      /*border-radius: 4px;*/
-      background-color: rgba(255,255,255,0.5); /*transparent på drop down*/
+  width: 180px;
+  /*border-radius: 4px;*/
+  background-color: rgba(255,255,255,0.5); /*transparent på drop down*/
+}
+tt{
+font-family:  'Old Standard TT', serif;
 }
 
 #form{
-  display: grid;
-  grid-template-areas: "a a a ";
-  grid-auto-columns: 3fr;
-  grid-gap: 0%;
+display: grid;
+grid-template-areas: "a a a ";
+grid-auto-columns: 3fr;
+grid-gap: 0%;
 }
 
 #Namn{
-  margin-left: 600px;
-  grid-gap: 5px 5px;
-  border: none;
-  background-color: white;
-  /*border-bottom: 3px solid #444;*/
+margin-left: 600px;
+grid-gap: 5px 5px;
+border: none;
+background-color: white;
+/*border-bottom: 3px solid #444;*/
 }
 #Losen{
-  margin-left: 20px;
+margin-left: 20px;
 grid-gap: 5px 5px;
 border: none;
 background-color: white;
 /*border-bottom: 3px solid #444;*/
 }
 #Knapp{
-  margin-top: 5px;
-  margin-right:40px;
-  grid-gap: 3px 3px;
+margin-top: 5px;
+margin-right:40px;
+grid-gap: 3px 3px;
 
 }
 .skapaKnapp{
-  color: grey;
+color: grey;
+font-family:  'Old Standard TT', serif;
 }
-
+#konto{
+margin-top: 10px;
+margin-left: 600px;
+}
 #pongBild{
 float: left;
 width: 270px;
@@ -317,97 +330,97 @@ width: 270px;
 
 #sushiYamaBild
 {
-  float: left;
-  width: 350px;
-  height: 255px;
+float: left;
+width: 350px;
+height: 255px;
 }
 
 #basilicoBild
 {
-  float: left;
-  width: 350px;
-  height: 255px;
+float: left;
+width: 350px;
+height: 255px;
 }
 
 #IlFIBild
 {
-  float: left;
-  width: 350px;
-  height: 255px;
+float: left;
+width: 350px;
+height: 255px;
 }
 
 .restLänk a{
-  color: #77a8a8;
-  background-color: transparent;
-  text-decoration: none;
-  text-decoration: underline;
-  font-size: 20px;
+color: #77a8a8;
+background-color: transparent;
+text-decoration: none;
+text-decoration: underline;
+font-size: 20px;
 }
 
 
 title{
-  text-align: center;
-  margin: auto;
+text-align: center;
+margin: auto;
 }
 
 #map{
-  height: 350px;
-  width: 30%;
-  margin: auto;
+height: 350px;
+width: 30%;
+margin: auto;
 }
 
 .omOss p
 {
-  font-size: 18px;
-  color: white;
-  margin: auto;
-  font-family: 'Old Standard TT', serif;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20em
+font-size: 18px;
+color: white;
+margin: auto;
+font-family: 'Old Standard TT', serif;
+margin-left: auto;
+margin-right: auto;
+width: 20em
 
-   margin-right: auto;
-   width: 20em;
+margin-right: auto;
+width: 20em;
 }
 .omOss h1{
-  align: center;
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
+align: center;
+color: white;
+font-weight: bold;
+font-size: 30px;
 }
 
 #ff{
-  font-size: 10px;
-  text-align: center;
-  margin: auto;
+font-size: 10px;
+text-align: center;
+margin: auto;
 }
 
 #regUemail{
- border: none;
- background-color: white;
+border: none;
+background-color: white;
 }
 
 #regUpassword{
-  border: none;
-  background-color: white;
+border: none;
+background-color: white;
 
 }
 
 #regUname{
-  border: none;
-  background-color: white;
+border: none;
+background-color: white;
 
 }
 
 .grid-container{
-  display: inline-grid;
-  grid-template-columns: auto auto;
-  padding:15px;
+display: inline-grid;
+grid-template-columns: auto auto;
+padding:15px;
 }
 
 .grid-item{
-  grid-gap: 5px;
-  padding: 15px;
-  padding: 35px;
+grid-gap: 5px;
+padding: 15px;
+padding: 35px;
 
 }

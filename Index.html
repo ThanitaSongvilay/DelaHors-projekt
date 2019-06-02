@@ -8,9 +8,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
   <script type="text/javascript" src="assets/js/index.js"></script>
-
-
   </head>
+  
 <body class="fSidan">
     <nav>
       <div class="dropDown">
@@ -36,8 +35,8 @@
           <div id="Knapp">
             <button type="submit">Logga in</button>
             </div>
-            <div class="konto">
-            <h5> Jag vill skapa ett konto! <br>
+            <div id="konto">
+            <tt> Jag vill skapa ett konto! <tt><br>
               <input class="skapaKnapp" onclick="window.location.href='registrera.html'" type="button" value="Skapa Konto"/>
             </div>
             <!--<a href="registrera.html"> Registrera dig här</a></h5>-->
@@ -71,10 +70,12 @@
 
     <div>
         <form id="ruta" name="sökForm" method="post" action ="assets/processphp/search-process.php" onsubmit="return kollaSök()">
-          <br>
-          <input type="text" name="sökruta" id="sökruta" placeholder="Sök...">
-          <br>
+          <div id="sökruta">
+          <input type="text" name="sökruta" placeholder="Sök...">
+        </div>
+          <div id="">
           <button id="sökknapp" type="submit">Sök</button>
+          <div>
         </form>
       </div>
 

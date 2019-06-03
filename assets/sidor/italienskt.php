@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+<?php session_start();
+if(isset($_SESSION['loggedIn']) && ($_SESSION['loggedIn']==true)){
+}
+else{
+  $_SESSION['Value']=Null;
+
+}
+?>
+
     <head>
         <title>Italienska restauranger</title>
         <link rel="stylesheet" href="../css/main.css">

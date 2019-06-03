@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+<?php session_start();
+if(isset($_SESSION['loggedIn']) && ($_SESSION['loggedIn']==true)){
+}
+else{
+  $_SESSION['Value']=Null;
+
+}
+?>
+
 <head>
   <title>Pong</title>
 <meta charset="UTF-8">

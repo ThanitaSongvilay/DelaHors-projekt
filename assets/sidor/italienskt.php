@@ -17,8 +17,8 @@
           <ul>
           <li><a href="#">Restauranger</a>
           <ul>
-          <li><a href="italienskt.html">Italienskt</a>
-          <li><a href="asiatiskt.html">Asiatiskt</a>
+          <li><a href="italienskt.php">Italienskt</a>
+          <li><a href="asiatiskt.php">Asiatiskt</a>
           </ul>
         </div>
       </nav>
@@ -28,8 +28,8 @@
         </div>
         <div class="grid-container">
 
-          <div class="grid-item"><a href="basilico.html"><p>Basilico</p><img id="basilicoBild" src="../img/basilico.jpg"></a></div>
-          <div class="grid-item"><a href="Ilforno.html"><p>Il forno Italiano</p><img id="IlFIBild" src="../img/ilforno-italiano.jpg"></a></div>
+          <div class="grid-item"><a href="basilico.php"><p>Basilico</p><img id="basilicoBild" src="../img/basilico.jpg"></a></div>
+          <div class="grid-item"><a href="Ilforno.php"><p>Il forno Italiano</p><img id="IlFIBild" src="../img/ilforno-italiano.jpg"></a></div>
 
         </div>
     </body>

@@ -13,13 +13,13 @@
         <h>RestauRank </h>
         <div class="dropDown">
           <ul>
-          <li><a href="../../Index.html">Hem</a>
+          <li><a href="../../Index.php">Hem</a>
           </ul>
           <ul>
           <li><a href="#">Restauranger</a>
           <ul>
-          <li><a href="italienskt.html">Italienskt</a>
-          <li><a href="asiatiskt.html">Asiatiskt</a>
+          <li><a href="italienskt.php">Italienskt</a>
+          <li><a href="asiatiskt.php">Asiatiskt</a>
           </ul>
         </div>
       </nav>
@@ -29,9 +29,9 @@
             <p><i>Här kan du hitta ett urval bland asiatiska restauranger</i></p><br>
         </div>
         <div class="grid-container">
-            <div class="grid-item"><a href="pong.html"><p>Pong</p><br><img id="pongBild" src="../img/pong.jpg"></a></div>
+            <div class="grid-item"><a href="pong.php"><p>Pong</p><br><img id="pongBild" src="../img/pong.jpg"></a></div>
 
-            <div class="grid-item"><a href="sushiYama.html"><p>Sushi yama</p><br><img id="sushiYamaBild" src="../img/sushi.jpg"></a></div>
+            <div class="grid-item"><a href="sushiYama.php"><p>Sushi yama</p><br><img id="sushiYamaBild" src="../img/sushi.jpg"></a></div>
         </div>
     </body>
 </html>

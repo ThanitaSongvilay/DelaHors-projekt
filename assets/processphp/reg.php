@@ -31,13 +31,13 @@ $SHpword="";
 $randomSalt=Salt();
 
 if(isset($_POST['regUname'])){
-	$uname=$_POST["regUname"]; }
+	$uname=mysqli_real_escape_string($_POST["regUname"]); }
 
 if(isset($_POST['regUemail'])){
-	$email = $_POST["regUemail"]; }
+	$email = mysqli_real_escape_string($_POST["regUemail"]); }
 
 if(isset($_POST['regUpassword'])){
-	$pword = $_POST["regUpassword"].$randomSalt;
+	$pword =mysqli_real_escape_string($_POST["regUpassword"].$randomSalt);
 	$SHpword=sha1($pword);
 	}
 
@@ -71,13 +71,15 @@ function AddToDb($pword,$email,$uname,$randomSalt,$Uvalue){
 			die("Connection failed: " .$con.connect_error);
 		}
 
-	$sql = "INSERT INTO Users (Username,Email,Password,Salt,Value) VALUES ('$uname','$email','$pword','$randomSalt','$Uvalue')";
 
-	if($con->query($sql)=== TRUE){
+	$sql =$con->prepare("INSERT INTO Users (Username,Email,Password,Salt,Value) VALUES (?,?,?,?,?)");
+  $sql->bind_param("sssss",$uname,$email,$pword,$randomSalt,$Uvalue);
+  $sql->execute();
+	if($sql){
 			header("Location:../../index.php");
 		}
 		else{
-			 echo "ERROR $sql";
+			 echo "ERROR";
 			}
 	$con->close();
 }

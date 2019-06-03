@@ -20,8 +20,8 @@
         <ul>
         <li><a href="#">Restauranger</a>
         <ul>
-        <li><a href="assets/sidor/italienskt.html">Italienskt</a>
-        <li><a href="assets/sidor/asiatiskt.html">Asiatiskt</a>
+        <li><a href="assets/sidor/italienskt.php">Italienskt</a>
+        <li><a href="assets/sidor/asiatiskt.php">Asiatiskt</a>
         </ul>
       </div><br>
       <div class= "logInContainer">
@@ -37,7 +37,7 @@
             </div>
             <div id="konto">
             <tt> Jag vill skapa ett konto! <tt><br>
-              <input class="skapaKnapp" onclick="window.location.href='registrera.html'" type="button" value="Skapa Konto"/>
+              <input class="skapaKnapp" onclick="window.location.href='registrera.php'" type="button" value="Skapa Konto"/>
             </div>
             <!--<a href="registrera.html"> Registrera dig här</a></h5>-->
         </form>

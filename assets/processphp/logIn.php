@@ -67,7 +67,7 @@ if(mysqli_num_rows($res_test) == 0){
 
 else if(mysqli_num_rows($res_test)>0){
 	$sql_saltQuery="SELECT Salt,Password,Value FROM Users WHERE Username='$uname'";
-    $res=$con->query($sql_saltQuery);
+  $res=$con->query($sql_saltQuery);
 	$res=$res->fetch_assoc();
 	$Salt=$res['Salt'];
 	$hash=sha1($pword.$Salt);

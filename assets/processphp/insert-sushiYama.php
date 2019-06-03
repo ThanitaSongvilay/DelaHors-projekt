@@ -5,12 +5,18 @@
     if(isset($_POST["användarNamn"])){
         $namnet = $_POST['användarNamn'];
 
-		if(isset($_POST["kommentar"])){
+		    if(isset($_POST["kommentar"])){
           $kommentar = $_POST['kommentar'];
         }
-    }
 
-addToDatabase($namnet,$kommentar,$restID);
+    		if(isset($_SESSION['loggedIn']) && ($_SESSION['loggedIn']==true)){
+
+    			addToDatabase($namnet,$kommentar,$restID);
+      		}
+        }
+
+    	echo("'<script> alert('Du måste vara inloggad för att kommentera!');</script>'");
+    	header("Refresh:0; URL=../sidor/IlForno.php");
 
 
 function addToDatabase($namnet,$kommentar,$restID){

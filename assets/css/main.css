@@ -164,15 +164,17 @@ ff,username,useremail,UserPassword,h4,a{
 font-family: 'Old Standard TT', serif;
 }
 
-#sökruta
+.sök
 {
 top: 50px;
-float: center;
+float: left;
+margin-top: -40px;
+margin-left: 600px;
 /*background: white;*/
 height: 50%;
 border-radius: 30px;
 padding: 10px;
-box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
+/*box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);*/
 }
 
 a{
@@ -215,9 +217,14 @@ font-size: 12px;
 font-family: 'Old Standard TT', serif;
 width: 150px;box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
+.sök:hover > #sökruta{
+  width: 240px;
+  padding: 0 6px;
 
+
+}
 button{
-background-color: grey;
+background-color: black;
 border: none;
 color: white;
 padding: 6px 20px;
@@ -231,15 +238,16 @@ box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
 
 nav .logInContainer button{
-padding: 6px;
+padding: 6px 10px;
 font-size: 12px;
 border: none;
 cursor: pointer;
 box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
+
 }
 
 button.sökknapp{
-  padding: 6px 20px;
+  padding: 6px 10px;
   font-size: 14px;
   border: none;
   cursor: pointer;

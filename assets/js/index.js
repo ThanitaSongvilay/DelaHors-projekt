@@ -23,7 +23,7 @@ function kollaSök()
 
       if(sök.trim() == "")
     {
-      alert("Vänligen skriv in den restaurang du är intresserad av i sökrutan");
+      alert("Vänligen fyll i sökrutan");
       return false;
     }
     return true;

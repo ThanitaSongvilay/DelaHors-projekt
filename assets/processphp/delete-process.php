@@ -10,7 +10,8 @@
 			die("Connection failed: " .$con.connect_error);
 		}
 
-		$sql= "DELETE FROM Kommentarer WHERE KomId=$_GET[KomId]";
+
+		$sql= "DELETE FROM Kommentarer WHERE KomId=$_GET[KomId]"; /*fixa injection :D!!!!*/
 		if(mysqli_query($con,$sql)){
 			echo"Kommentaren är nu borttagen!";
 			header('Location:'.$_SERVER["HTTP_REFERER"]); /*hoppar till sidan innan!*/

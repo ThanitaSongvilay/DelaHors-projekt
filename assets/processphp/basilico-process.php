@@ -21,7 +21,7 @@
 		echo "<a href=http://localhost/grupp11_2019/assets/processphp/delete-process.php?KomId=".$row['KomId'].">Delete</a>";
 		echo'</div>';
 		echo"<hr>";
-	}
+		}
 	}
 
 	else if(isset($_SESSION['loggedIn'])&&($_SESSION['loggedIn']==true) && ($_SESSION['Value']==0)){
@@ -32,7 +32,7 @@
 		echo ' <p>'.$row["Kommentar"].'</p>';
 		echo'</div>';
 		echo"<hr>";
-	}
+		}
 	}
 
 	else{

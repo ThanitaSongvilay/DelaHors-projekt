@@ -23,7 +23,7 @@ else{
         <h>RestauRank </h>
         <div class="dropDown">
           <ul>
-          <li><a href="../../Index.html">Hem</a>
+          <li><a href="../../Index.php">Hem</a>
           </ul>
           <ul>
           <li><a href="#">Restauranger</a>

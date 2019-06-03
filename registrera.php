@@ -10,13 +10,13 @@
         <h>RestauRank</h>
         <div class="dropDown">
           <ul>
-            <li><a href="Index.html">Hem</a>
+            <li><a href="Index.php">Hem</a>
           </ul>
           <ul>
             <li><a href="#">Restauranger</a>
           <ul>
-            <li><a href="assets/sidor/italienskt.html">Italienskt</a>
-            <li><a href="assets/sidor/asiatiskt.html">Asiatiskt</a>
+            <li><a href="assets/sidor/italienskt.php">Italienskt</a>
+            <li><a href="assets/sidor/asiatiskt.php">Asiatiskt</a>
           </ul>
         </div>
       </nav>

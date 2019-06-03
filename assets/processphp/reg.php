@@ -73,7 +73,7 @@ function AddToDb($pword,$email,$uname,$randomSalt,$Uvalue){
 
 
 	$sql =$con->prepare("INSERT INTO Users (Username,Email,Password,Salt,Value) VALUES (?,?,?,?,?)");
-  $sql->bind_param("sssss",$uname,$email,$pword,$randomSalt,$Uvalue);
+  $sql->bind_param("ssssi",$uname,$email,$pword,$randomSalt,$Uvalue);
   $sql->execute();
 	if($sql){
 			header("Location:../../index.php");

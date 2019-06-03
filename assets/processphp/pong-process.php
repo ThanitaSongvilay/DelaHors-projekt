@@ -20,10 +20,10 @@
 		echo "<a href=http://localhost/grupp11_2019/assets/processphp/delete-process.php?KomId=".$row['KomId'].">Delete</a>";
 		echo'</div>';
 		echo"<hr>";
-	}
+		}
 	}
 
-	else if(isset($_SESSION['loggedIn'])&&($_SESSION['loggedIn']==true) && ($_SESSION['Value']==0)){
+	else if(isset($_SESSION['loggedIn'])&&($_SESSION['loggedIn']== true) && ($_SESSION['Value']== 0)){
 		$save=$con->query($sql);
 		while($row=$save->fetch_assoc()){
 		echo'<div class="kommentarer">';
@@ -31,7 +31,7 @@
 		echo ' <p>'.$row["Kommentar"].'</p>';
 		echo'</div>';
 		echo"<hr>";
-	}
+		}
 	}
 
 	else{

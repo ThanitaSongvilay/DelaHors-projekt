@@ -25,7 +25,7 @@
       <div class="dropDown">
         <h>RestauRank </h>
         <ul>
-        <li><a href="index.html">Hem</a>
+        <li><a href="index.php">Hem</a>
         </ul>
         <ul>
         <li><a href="#">Restauranger</a>

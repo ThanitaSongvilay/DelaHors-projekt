@@ -25,7 +25,7 @@
 
 	if(isset($_POST['Namn'])){
 	if(empty($_POST["Namn"])){
-	 echo "Användar namnet finns inte";
+	 echo "Fyll i ett användarnamn";
 	}
 	else{
 		$uname=$_POST["Namn"]; }
@@ -33,21 +33,40 @@
 
 	if(isset($_POST['password'])){
 	if(empty($_POST["password"])){
-		echo"Fyll i din lösenord!";
-	}else{
-		$pword = $_POST["password"]; }
+		echo"Fyll i ditt lösenord!";
+	}else
+		{
+			$pword = $_POST["password"];
+		}
 	}
 
 $sql_test="SELECT * FROM Users WHERE Username='$uname'";
 $res_test=mysqli_query($con,$sql_test);
 
 if(mysqli_num_rows($res_test) == 0){
-	echo("'<script> alert('Användaren finns inte!');</script>'");
-	header("Refresh: 1;URL=../../index.php");
+
+	$sql_admin="SELECT * FROM Admins WHERE AdminNamn='$uname'";
+	$res_admin=mysqli_query($con,$sql_admin);
+
+	if(mysqli_num_rows($res_admin) == 0){
+		echo("'<script> alert('Användaren finns inte!');</script>'");
+		header("Refresh: 1;URL=../../index.php");
+
+	}
+
+		$result=$res_admin->fetch_assoc();
+		if((mysqli_num_rows($res_admin)>0) && ($result['Lösenord']=$pword)){
+		$_SESSION['loggedIn']=true;
+		$_SESSION['Username']=$uname;
+		$_SESSION['Value']=$Uvalue;
+		echo("'<script> alert('Välkommen $uname!');</script>'");
+		header("Refresh: 0; URL=../../Index.php");
+		}
+
 }
 
 else if(mysqli_num_rows($res_test)>0){
-	 $sql_saltQuery="SELECT Salt,Password,Value FROM Users WHERE Username='$uname'";
+	$sql_saltQuery="SELECT Salt,Password,Value FROM Users WHERE Username='$uname'";
     $res=$con->query($sql_saltQuery);
 	$res=$res->fetch_assoc();
 	$Salt=$res['Salt'];
@@ -55,17 +74,16 @@ else if(mysqli_num_rows($res_test)>0){
 	$password=$res['Password'];
 	$Uvalue=$res['Value'];
 	if($hash == $password){
-		echo("'<script> alert('"Välkommen $uname!');</script>'");
-		header("Refresh: 2; URL=../../Index.php");
 		$_SESSION['loggedIn']=true;
 		$_SESSION['Username']=$uname;
 		$_SESSION['Value']=$Uvalue;
+		echo("'<script> alert('Välkommen $uname!');</script>'");
+		header("Refresh: 0; URL=../../Index.php");
 
 	}
 	else{
 		echo "Ditt lösenord eller användarnamn är fel, vänligen prova igen" ;
-		echo"$salt,   ";
-		header("Refresh:2; URL=../../index.php");
+		header("Refresh:1; URL=../../index.php");
 	}
 }
 	$con->close();

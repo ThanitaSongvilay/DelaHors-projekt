@@ -37,8 +37,9 @@
 				<br><br><br><br><br><br><br><br><br><br><br><br><br>
 				<br><br><br><br><br><br><br><br><br><br><br><br><br>
         <div>
-            <p>På Il Forno Italiano kan du hitta italienska rätter som bland annat vedugnsgräddade pizzor, färsk pasta och antipasti. Utöver detta har restaurangen även ett sortiment av vin.
-						Nedan hittar ni Il Forno Italianos meny och kontaktuppgifter.</p>
+            <p>På Il Forno Italiano kan du hitta italienska rätter som bland annat vedugnsgräddade pizzor, färsk pasta och antipasti.
+						<br>Utöver detta har restaurangen även ett sortiment av vin.
+						<br>Nedan hittar ni Il Forno Italianos meny.</p>
         </div>
 
         <br>

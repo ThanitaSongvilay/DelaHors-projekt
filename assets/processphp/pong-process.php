@@ -11,7 +11,8 @@
 	}
 
 	$sql="SELECT Kommentar,Namn,KomId FROM Kommentarer WHERE RestId = 1 ";
-	$save=$con->query($sql);
+	if(isset($_SESSION['loggedIn'])&&($_SESSION['loggedIn']==true) && ($_SESSION['Value']==1)){
+		$save=$con->query($sql);
 		while($row=$save->fetch_assoc()){
 		echo'<div class="kommentarer">';
 		echo ' <p> '.$row["Namn"].'</p>';
@@ -20,5 +21,22 @@
 		echo'</div>';
 		echo"<hr>";
 	}
+	}
+
+	else if(isset($_SESSION['loggedIn'])&&($_SESSION['loggedIn']==true) && ($_SESSION['Value']==0)){
+		$save=$con->query($sql);
+		while($row=$save->fetch_assoc()){
+		echo'<div class="kommentarer">';
+		echo ' <p> '.$row["Namn"].'</p>';
+		echo ' <p>'.$row["Kommentar"].'</p>';
+		echo'</div>';
+		echo"<hr>";
+	}
+	}
+
+	else{
+		echo"Logga in för att se kommentarer och kommentera!";
+	}
+
 $con->close();
 ?>

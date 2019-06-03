@@ -167,8 +167,8 @@ font-family: 'Old Standard TT', serif;
 #sökruta
 {
 top: 50px;
-float: left;
-background: white;
+float: center;
+/*background: white;*/
 height: 50%;
 border-radius: 30px;
 padding: 10px;
@@ -220,7 +220,7 @@ button{
 background-color: grey;
 border: none;
 color: white;
-padding: 8px 20px;
+padding: 6px 20px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
@@ -237,6 +237,15 @@ border: none;
 cursor: pointer;
 box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
 }
+
+button.sökknapp{
+  padding: 6px 20px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,.20);
+}
+
 button:hover{
 color: #77a8a8;
 }

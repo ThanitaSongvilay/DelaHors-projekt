@@ -1,4 +1,5 @@
 <?php
+	session_start();
     $namnet = "";
     $kommentar ="";
     $restID= 5;
@@ -8,9 +9,15 @@
 		if(isset($_POST["kommentar"])){
           $kommentar = $_POST['kommentar'];
         }
+
+		if(isset($_SESSION['loggedIn']) && ($_SESSION['loggedIn']==true)){
+		addToDatabase($namnet,$kommentar,$restID);
+		}
     }
 
-addToDatabase($namnet,$kommentar,$restID);
+	echo("'<script> alert('Du måste vara inloggad för att kommentera!');</script>'");
+	header("Refresh:0; URL=../sidor/Basilico.php");
+
 
 function addToDatabase($namnet,$kommentar,$restID){
   $host="dbtrain.im.uu.se";
